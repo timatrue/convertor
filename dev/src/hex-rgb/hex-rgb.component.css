@@ -1,0 +1,31 @@
+h1{
+    font-size: 14px;
+    color: #A9A9A9;
+}
+h1, span, label, input{
+    font-family: 'Inconsolata','Helvetica', 'Arial', 'Sans-Serif', 'serif';
+}
+.hex-convertor{
+    padding:15px;
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+.inputError{
+    font-size: 11px;
+    color: red;
+}
+#hex-container{
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: column wrap;
+}
+#rgb-container{
+    margin-bottom: 10px;
+}
+#color-example{
+    width: 100%;
+    height: 30px;
+    color: red;
+}

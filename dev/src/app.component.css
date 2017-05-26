@@ -1,0 +1,15 @@
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: cornflowerblue;
+    margin-bottom: 20px;
+}
+.convertors{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.widget{
+    margin: 3px;
+    display: inline-block;
+}
