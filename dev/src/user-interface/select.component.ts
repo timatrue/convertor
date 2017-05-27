@@ -3,11 +3,13 @@
  */
 import {Component, EventEmitter, Output} from "@angular/core";
 import {CONVERTORS} from "../convertors-service/convertors.list";
+import './select.component.css';
+
 @Component({
     selector: 'convertor-list',
     template:
             `
-        <div>
+        <div class="convertor-list">
             <select #selector>
                 <option *ngFor="let convertor of convertors" [value]="convertor">{{getTitleOption(convertor)}}</option>
             </select>

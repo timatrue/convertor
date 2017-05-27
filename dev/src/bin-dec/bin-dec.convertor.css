@@ -1,13 +1,4 @@
-.bin-convertor{
-    display: flex;
-    flex-flow: column wrap;
-    padding:15px;
-    border-radius: 5px;
-    border: 1px solid lightgrey;
-}
-.inputError{
-    font-size: 11px;
-    color: red;
+.convertor.bin{
 }
 #bin-container{
     margin-bottom: 10px;

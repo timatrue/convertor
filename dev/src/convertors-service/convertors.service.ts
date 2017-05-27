@@ -8,6 +8,8 @@ import {CONVERTORS} from "./convertors.list";
 export class ConvertorService{
     getService(service: string){
         return CONVERTORS[service].component;
-
+    }
+    defaultComponents(){
+        return Object.keys(CONVERTORS);
     }
 }

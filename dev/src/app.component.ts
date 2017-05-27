@@ -1,29 +1,21 @@
-import {
-    AfterViewInit, Component, ComponentFactoryResolver, ComponentRef, ViewChild,
-    ViewContainerRef, ViewRef
-} from '@angular/core';
+import {Component, ComponentFactoryResolver, ComponentRef, OnInit, ViewChild, ViewContainerRef} from '@angular/core';
 import {ConvertorService} from "./convertors-service/convertors.service";
-import './app.component.css';
 import {Subscription} from "rxjs/Subscription";
 import {MessageService} from "./message-service/message.service";
+import './app.component.css';
 
 @Component({
     selector: 'convertors',
     template:
             `       
         <div class="header"></div>
-        <convertor-list (convertorClicked)="onConvertorClicked($event)"></convertor-list>
+        <convertor-list (convertorClicked)="onConvertor($event)"></convertor-list>
         
         <div class="convertors" >
-            <div class="widget">
-                <hex-rgb-box></hex-rgb-box>
-            </div>
-            <div class="widget" #target>
-                <bin-dec-box ></bin-dec-box>
-            </div>
+            <ng-container #target></ng-container>
         </div>`
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
 
     @ViewChild('target', {read: ViewContainerRef}) target: ViewContainerRef;
 
@@ -36,15 +28,20 @@ export class AppComponent {
     constructor(private service: ConvertorService,
                 private componentFactoryResolver: ComponentFactoryResolver,
                 private messageService: MessageService){
-        this.subscription = this.messageService.getMessage().subscribe(message => this.messageFromChild(message))
+        this.subscription = this.messageService.getMessage().subscribe(message => this.removeChild(message))
     }
-    messageFromChild(message){
+    ngOnInit(){
+        this.service.defaultComponents().forEach(component => this.onConvertor(component))
+        //this.onConvertor("BinDecBox");
+    }
+    removeChild(message){
         console.log(message.id);
         let component = this.idMap.get(message.id);
         let indice = this.target.indexOf(component);
         this.target.remove(indice);
+        this.idMap.delete(message.id);
     }
-    onConvertorClicked(event: string){
+    onConvertor(event: string){
         let convertor = this.service.getService(event);
         const factory = this.componentFactoryResolver.resolveComponentFactory(convertor);
         let componentRef = this.target.createComponent(factory);

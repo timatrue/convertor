@@ -9,7 +9,8 @@ import {MessageService} from "../message-service/message.service";
     selector: 'bin-dec-box',
     template:
             `
-        <div class="bin-convertor">
+        <div class="convertor bin">
+            <a class="convertor-remove" (click)="deleteConvertor()"></a>
             <h1> Binary to Decimal Converter</h1>
             <div id="bin-container">
                 <div>
@@ -23,7 +24,6 @@ import {MessageService} from "../message-service/message.service";
                 <label> Decimal value:</label>
                 <input [value]="displayValue()" [readonly]="true">
             </div>
-            <button (click)="deleteConvertor()" >Delete Convertor {{ componentId}}</button>
         </div>`
 })
 export class BinDecBox{

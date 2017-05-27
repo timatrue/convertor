@@ -1,14 +1,16 @@
 /**
  * Created by artem on 19/05/2017.
  */
-import {Component, ComponentRef, ElementRef} from '@angular/core';
+import {Component} from '@angular/core';
 import './hex-rgb.component.css';
+import {MessageService} from "../message-service/message.service";
 
 @Component({
     selector: 'hex-rgb-box',
     template:
             `
-        <div class="hex-convertor">
+        <div class="convertor hex">
+            <a class="convertor-remove" (click)="deleteConvertor()"></a>
             <h1> HEX to RGB Converter</h1>
             <div id="hex-container">
                 <div>
@@ -30,7 +32,11 @@ export class HexRgbBox{
     wrap: string = "RGB";
     customRGB = "RGB(0,0,255)";
     componentId: string;
-    constructor() { }
+    constructor(private messageService: MessageService) { }
+
+    deleteConvertor():void{
+        this.messageService.sendMessage(this.componentId);
+    }
 
     onKey(value: string) {
         let length = value.length;

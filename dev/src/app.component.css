@@ -1,15 +1,41 @@
+h1{
+    font-size: 14px;
+    color: #A9A9A9;
+}
+h1, span, label, input{
+    font-family: 'Inconsolata','Helvetica', 'Arial', 'Sans-Serif', 'serif';
+}
 .header{
     width: 100%;
     height: 50px;
     background-color: cornflowerblue;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .convertors{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
-.widget{
+.convertor{
+    position: relative;
     margin: 3px;
-    display: inline-block;
+    display: flex;
+    flex-flow: column wrap;
+    padding:15px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+.convertor-remove:after {
+     content: '✖'; /* UTF-8 symbol */
+     position: absolute;
+     right: 5px;
+     top: 5px;
+     color: #757370;
+}
+.convertor-remove:hover:after {
+    color: #E74C3C;
+}
+.inputError{
+    font-size: 11px;
+    color: red;
 }
