@@ -2,9 +2,10 @@ h1{
     font-size: 14px;
     color: #A9A9A9;
 }
-h1, span, label, input{
+h1, span, label, input, a{
     font-family: 'Inconsolata','Helvetica', 'Arial', 'Sans-Serif', 'serif';
 }
+
 .header{
     width: 100%;
     height: 50px;
@@ -38,4 +39,38 @@ h1, span, label, input{
 .inputError{
     font-size: 11px;
     color: red;
+}
+.link-back{
+    border: 1px solid lightgrey;
+    box-shadow: 0 4px 2px #888888;
+}
+.link-back:hover{
+    border: 1px solid lightgrey;
+    box-shadow: 0 5px 3px #888888;
+}
+/*arrows*/
+i {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+}
+.right-arrow {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left-arrow  {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up-arrow  {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down-arrow  {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }

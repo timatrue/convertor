@@ -1,7 +1,7 @@
 function colorConvertor(res){
 
     console.log("handler color");
-    res.send("Color Convertor");
+    res.sendFile(__rootdir + '/public/index.html');
 }
 
 function binaryConvertor(res){

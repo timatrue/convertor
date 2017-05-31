@@ -15,7 +15,7 @@ import {MessageService} from "./message-service/message.service";
     RouterModule.forRoot([
         {path: 'binary-hexadecimal-convertor',
         component: BinDecBox},
-        {path: 'hex-rgb-convertor',
+        {path: 'ext-hex-rgb-convertor',
             component: HexRgbExt}
     ])],
 	declarations: DECLARATIONS,

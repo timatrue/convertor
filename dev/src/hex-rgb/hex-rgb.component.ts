@@ -4,15 +4,20 @@
 import {Component} from '@angular/core';
 import './hex-rgb.component.css';
 import {MessageService} from "../message-service/message.service";
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'hex-rgb-box',
     template:
             `
+        <div class="link-back"*ngIf="router.url === '/ext-hex-rgb-convertor'">
+            <a  routerLink="/"><i class="left-arrow"></i> Back to main page</a>
+        </div>
         <div class="convertor hex">
             <a class="convertor-remove" (click)="deleteConvertor()"></a>
             <h1> HEX to RGB Converter</h1>
             <div id="hex-container">
+                
                 <div>
                     <label> HEX value:</label>
                     <input maxlength="7" #box (keyup)="onKey(box.value)" placeholder="Example: #722FAF">
@@ -24,6 +29,8 @@ import {MessageService} from "../message-service/message.service";
                 <input [value]="displayValue()" [readonly]="true"> 
             </div>
             <div id="color-example" [ngStyle]="{'background-color': getStyle()}"></div>
+            <a  routerLink="/ext-hex-rgb-convertor" *ngIf="router.url === '/'" >Extend convertor</a>
+            
         </div>`
 })
 export class HexRgbBox{
@@ -32,12 +39,15 @@ export class HexRgbBox{
     wrap: string = "RGB";
     customRGB = "RGB(0,0,255)";
     componentId: string;
-    constructor(private messageService: MessageService) { }
+    constructor(public messageService: MessageService, private router: Router) { }
 
     deleteConvertor():void{
         this.messageService.sendMessage(this.componentId);
     }
-
+    navigateTo(){
+        this.router.navigate(['/ext-hex-rgb-convertor']);
+        this.router.navigate(['/']);
+    }
     onKey(value: string) {
         let length = value.length;
         if(value.charAt(0) === "#"){

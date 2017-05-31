@@ -9,7 +9,7 @@ function start(route, handle){
     app.use(express.static('public'));
     app.get('/', function(req, res){
 
-        res.sendFile(__rootdir + '/server/index.html');
+        res.sendFile(__rootdir + '/public/index.html');
     });
 
     app.get('/*',function(req, res){

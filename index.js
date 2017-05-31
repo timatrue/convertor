@@ -7,7 +7,7 @@ var requestHandler = require('./server/requestHandlers.js');
 var handle = {};
 var prodMode = false;
 handle['/'] = requestHandler.start;
-handle['/color-convertor'] = requestHandler.colorConvertor;
+handle['/ext-hex-rgb-convertor'] = requestHandler.colorConvertor;
 handle['/binary-convertor'] = requestHandler.binaryConvertor;
 
 server.start(router.route, handle);
