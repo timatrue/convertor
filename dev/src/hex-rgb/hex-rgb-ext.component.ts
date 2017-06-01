@@ -11,8 +11,25 @@ import {Router} from "@angular/router";
 @Component({
     //moduleId: module.id,
     selector: 'hex-rgb-ext',
-    template: '<hex-rgb-box></hex-rgb-box>'
-    //templateUrl: './hex-rgb/hex-rgb.component.html'
+    template: `
+        <div class="link-back">
+            <a  (click)="initParent()" routerLink="/"><i class="left-arrow"></i>Go back</a>
+        </div>
+        <div class="convertor hex">
+            <h1> HEX to RGB Converter</h1>
+            <div id="hex-container">
+                <div>
+                    <label> HEX value:</label>
+                    <input maxlength="7" #box (keyup)="onKey(box.value)" placeholder="Example: #722FAF">
+                </div>
+                <span class="inputError" *ngIf="!inputValid">{{ values }}</span>
+            </div>
+            <div id="rgb-container">
+                <label> RGB value:</label>
+                <input [value]="displayValue()" [readonly]="true">
+            </div>
+            <div id="color-example" [ngStyle]="{'background-color': getStyle()}"></div>
+        </div>`
 })
 
 
@@ -22,6 +39,9 @@ export class HexRgbExt extends HexRgbBox implements OnInit{
     }
     deleteConvertor():void{
         this.messageService.sendMessage("removeAll");
+    }
+    initParent():void{
+        this.messageService.sendMessage("initAll");
     }
     ngOnInit(){
         this.deleteConvertor();

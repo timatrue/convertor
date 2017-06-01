@@ -10,9 +10,6 @@ import {Router} from "@angular/router";
     selector: 'hex-rgb-box',
     template:
             `
-        <div class="link-back"*ngIf="router.url === '/ext-hex-rgb-convertor'">
-            <a  routerLink="/"><i class="left-arrow"></i> Back to main page</a>
-        </div>
         <div class="convertor hex">
             <a class="convertor-remove" (click)="deleteConvertor()"></a>
             <h1> HEX to RGB Converter</h1>

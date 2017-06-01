@@ -41,20 +41,18 @@ h1, span, label, input, a{
     color: red;
 }
 .link-back{
-    border: 1px solid lightgrey;
-    box-shadow: 0 4px 2px #888888;
+    box-sizing: border-box;
+    padding: 5px;
 }
-.link-back:hover{
-    border: 1px solid lightgrey;
-    box-shadow: 0 5px 3px #888888;
-}
+
 /*arrows*/
-i {
+i{
     border: solid black;
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 5px;
 }
+
 .right-arrow {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);

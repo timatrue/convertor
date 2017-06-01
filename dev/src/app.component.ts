@@ -18,9 +18,13 @@ import {Router} from "@angular/router";
             <convertor-list (convertorClicked)="onConvertor($event)"></convertor-list>
         </div>
             
-            <div class="convertors" ><ng-container #target></ng-container></div>
+            <div class="convertors" >
+                <ng-container #target>
+                    <router-outlet></router-outlet>
+                </ng-container>
+            </div>
         
-        <router-outlet></router-outlet> 
+        
     `
 })
 export class AppComponent implements OnInit, AfterContentInit{
@@ -40,7 +44,7 @@ export class AppComponent implements OnInit, AfterContentInit{
         this.subscription = this.messageService
             .getMessage()
             .subscribe(message => {
-                message.id === "removeAll" ? this.removeAll() : this.removeChild(message);
+                message.id === "removeAll" ? this.removeAll() : (message.id === "initAll" ?  this.ngOnInit() : this.removeChild(message));
             })
     }
 
