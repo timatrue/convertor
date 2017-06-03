@@ -25,16 +25,16 @@ import {Router} from "@angular/router";
                 <label> RGB value:</label>
                 <input [value]="displayValue()" [readonly]="true"> 
             </div>
-            <div id="color-example" [ngStyle]="{'background-color': getStyle()}"></div>
+            <div id="color-example" [ngStyle]="{'background-color': getStyle(1)}"></div>
             <a  routerLink="/ext-hex-rgb-convertor" *ngIf="router.url === '/'" >Extend convertor</a>
             
         </div>`
 })
 export class HexRgbBox{
     values = '';
-    inputValid = false;
-    wrap: string = "RGB";
-    customRGB = "RGB(0,0,255)";
+    inputValid: boolean = false;
+    wrap: string = "RGBA";
+    customRGB: string = "RGBA(0,0,255,1)";
     componentId: string;
     constructor(public messageService: MessageService, private router: Router) { }
 
@@ -77,7 +77,8 @@ export class HexRgbBox{
             .concat("(",
                 String(parseInt(m[1], 16)),",",
                 String(parseInt(m[2], 16)),",",
-                String(parseInt(m[3], 16)),")");
+                String(parseInt(m[3], 16)),",",
+                String(1),")");
         this.customRGB = converted;
 
         return converted;
@@ -101,8 +102,11 @@ export class HexRgbBox{
         }
         return error;
     }
-    getStyle(){
-        return  this.inputValid ? this.customRGB : "RGB(255,255,255)";
+    getStyle(opacity:number){
+        return  this.inputValid ? this.changeOpacity(this.customRGB, opacity): "RGBA(255,255,255,1)";
+    }
+    changeOpacity(color:string,opacity:number){
+        return color.replace( "1)",opacity + ")" );
     }
     displayValue(){
         return this.inputValid ? this.values : "";

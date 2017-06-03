@@ -3,11 +3,11 @@ import {BrowserModule} from "@angular/platform-browser";
 import {RouterModule} from "@angular/router";
 import {AppComponent} from './app.component';
 import {BinDecBox} from "./bin-dec/bin-dec.convertor";
-import {HexRgbExt} from "./hex-rgb/hex-rgb-ext.component";
+import {HexRgbBox} from "./hex-rgb/hex-rgb.component";
+import {HexRgbExt} from "./hex-rgb/hex-rgb-ext/hex-rgb-ext.component";
 import {APP_BASE_HREF} from '@angular/common';
 import {DECLARATIONS} from "./app.declarations";
 import {ConvertorService} from "./convertors-service/convertors.service";
-import {HexRgbBox} from "./hex-rgb/hex-rgb.component";
 import {MessageService} from "./message-service/message.service";
 
 @NgModule({
@@ -19,7 +19,7 @@ import {MessageService} from "./message-service/message.service";
             component: HexRgbExt}
     ])],
 	declarations: DECLARATIONS,
-    entryComponents: [HexRgbBox, BinDecBox, HexRgbExt],
+    entryComponents: [HexRgbBox, BinDecBox],
     providers: [{provide: APP_BASE_HREF, useValue: '/'}, ConvertorService, MessageService],
     bootstrap:[AppComponent]
 })

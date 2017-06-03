@@ -1,6 +1,5 @@
 import {
-    AfterContentInit,
-    AfterViewInit, Component, ComponentFactoryResolver, ComponentRef, OnInit, ViewChild,
+    AfterContentInit, Component, ComponentFactoryResolver, ComponentRef, OnInit, ViewChild,
     ViewContainerRef
 } from '@angular/core';
 import {ConvertorService} from "./convertors-service/convertors.service";
@@ -50,7 +49,6 @@ export class AppComponent implements OnInit, AfterContentInit{
 
     ngOnInit(){
         this.service.defaultComponents().forEach(component => this.onConvertor(component))
-        //this.onConvertor("BinDecBox");
     }
     ngAfterContentInit() {
        console.log("ngAfterContentInit")

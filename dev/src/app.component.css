@@ -36,6 +36,27 @@ h1, span, label, input, a{
 .convertor-remove:hover:after {
     color: #E74C3C;
 }
+.save-result-wrap{
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 3px;
+    display: flex;
+    margin: auto;
+}
+.save-result{
+
+}
+.save-result:after{
+    content: '✖'; /* UTF-8 symbol */
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    color: #E74C3C;
+    margin-left: 10px;
+    transform: rotate(45deg);
+
+}
 .inputError{
     font-size: 11px;
     color: red;
@@ -44,30 +65,25 @@ h1, span, label, input, a{
     box-sizing: border-box;
     padding: 5px;
 }
-
 /*arrows*/
 i{
     border: solid black;
     border-width: 0 2px 2px 0;
     display: inline-block;
-    padding: 5px;
+    padding: 4px;
 }
-
 .right-arrow {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
-
 .left-arrow  {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
 }
-
 .up-arrow  {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
 }
-
 .down-arrow  {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);

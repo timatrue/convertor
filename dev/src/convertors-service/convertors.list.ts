@@ -1,6 +1,5 @@
 import {BinDecBox} from "../bin-dec/bin-dec.convertor";
 import {HexRgbBox} from "../hex-rgb/hex-rgb.component";
-import {HexRgbExt} from "../hex-rgb/hex-rgb-ext.component";
 /**
  * Created by artem on 23/05/2017.
  */
