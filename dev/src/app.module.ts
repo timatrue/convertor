@@ -9,10 +9,12 @@ import {APP_BASE_HREF} from '@angular/common';
 import {DECLARATIONS} from "./app.declarations";
 import {ConvertorService} from "./convertors-service/convertors.service";
 import {MessageService} from "./message-service/message.service";
+import {MemoryService} from "./hex-rgb/hex-rgb-ext/memory.service";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
-    imports:[BrowserModule,
-    RouterModule.forRoot([
+    imports:[BrowserModule, FormsModule,
+        RouterModule.forRoot([
         {path: 'binary-hexadecimal-convertor',
         component: BinDecBox},
         {path: 'ext-hex-rgb-convertor',
@@ -20,7 +22,7 @@ import {MessageService} from "./message-service/message.service";
     ])],
 	declarations: DECLARATIONS,
     entryComponents: [HexRgbBox, BinDecBox],
-    providers: [{provide: APP_BASE_HREF, useValue: '/'}, ConvertorService, MessageService],
+    providers: [{provide: APP_BASE_HREF, useValue: '/'}, ConvertorService, MessageService, MemoryService],
     bootstrap:[AppComponent]
 })
 export class AppModule{ }

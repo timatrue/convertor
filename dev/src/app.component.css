@@ -25,6 +25,7 @@ h1, span, label, input, a{
     padding:15px;
     border-radius: 5px;
     border: 1px solid lightgrey;
+    box-shadow: 0 4px 5px lightgrey;
 }
 .convertor-remove:after {
      content: '✖'; /* UTF-8 symbol */
@@ -40,6 +41,7 @@ h1, span, label, input, a{
     box-sizing: border-box;
     border: 1px solid lightgrey;
     border-radius: 5px;
+    box-shadow: 0 2px 3px lightgrey;
     padding: 3px;
     display: flex;
     margin: auto;
@@ -52,7 +54,7 @@ h1, span, label, input, a{
     position: relative;
     display: inline-block;
     font-weight: bold;
-    color: #E74C3C;
+    color: green;
     margin-left: 10px;
     transform: rotate(45deg);
 

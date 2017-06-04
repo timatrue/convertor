@@ -17,7 +17,7 @@ import {Router} from "@angular/router";
                 
                 <div>
                     <label> HEX value:</label>
-                    <input maxlength="7" #box (keyup)="onKey(box.value)" placeholder="Example: #722FAF">
+                    <input maxlength="7" #box (keyup)="onKey(box.value)" [value]="colorPickerVal" placeholder="Example: #722FAF">
                 </div>
                 <span class="inputError" *ngIf="!inputValid">{{ values }}</span>
             </div>
@@ -25,25 +25,35 @@ import {Router} from "@angular/router";
                 <label> RGB value:</label>
                 <input [value]="displayValue()" [readonly]="true"> 
             </div>
-            <div id="color-example" [ngStyle]="{'background-color': getStyle(1)}"></div>
-            <a  routerLink="/ext-hex-rgb-convertor" *ngIf="router.url === '/'" >Extend convertor</a>
+            <div id="color-container">
+                <input  #picker type="color" (change)="onColorPicker($event.target.value)" [value]="getHex()"/>
+                <div id="color-example" [ngStyle]="{'background-color': getStyle(1)}"></div>
+            </div>
+                <a  routerLink="/ext-hex-rgb-convertor" *ngIf="router.url === '/'" >Extend convertor</a>
             
         </div>`
 })
 export class HexRgbBox{
     values = '';
+    colorPickerVal: string = "";
     inputValid: boolean = false;
-    wrap: string = "RGBA";
-    customRGB: string = "RGBA(0,0,255,1)";
+    wrap: string = "rgba";
+    customRGB: string = "rgba(0,0,255,1)";
+    customHEX: string = "#ffffff";
+    customDefault: string = "#ffffff";
     componentId: string;
     constructor(public messageService: MessageService, private router: Router) { }
 
+    onColorPicker(color:string){
+        console.log(color);
+        this.colorPickerVal = color;
+        this.onKey(this.colorPickerVal);
+    }
+    getHex(){
+        return this.inputValid ? this.customHEX : this.customDefault;
+    }
     deleteConvertor():void{
         this.messageService.sendMessage(this.componentId);
-    }
-    navigateTo(){
-        this.router.navigate(['/ext-hex-rgb-convertor']);
-        this.router.navigate(['/']);
     }
     onKey(value: string) {
         let length = value.length;
@@ -51,8 +61,8 @@ export class HexRgbBox{
             if(length < 4 || length === 5 || length === 6) this.values = this.getError("length");
             else if (length === 4 || length > 6) {
                 if(this.isHexValid(value)) {
-                    this.inputValid = true;
                     this.values = this.hex2rgb(value);
+                    this.inputValid = true;
                 }
                 else {
                     this.inputValid = false;
@@ -63,15 +73,16 @@ export class HexRgbBox{
             this.values = length > 0 ? this.getError("format") : "";
         }
     }
-
     hex2rgb(hex) {
         if(hex.length > 4){
             var m = hex.match(/^#?([\da-f]{2})([\da-f]{2})([\da-f]{2})$/i);
+
         } else {
             var m = hex.match(/^#?([\da-f]{1})([\da-f]{1})([\da-f]{1})$/i);
             m[1] = m[1].concat(m[1]);
             m[2] = m[2].concat(m[2]);
             m[3] = m[3].concat(m[3]);
+
         }
         let converted = this.wrap
             .concat("(",
@@ -80,7 +91,7 @@ export class HexRgbBox{
                 String(parseInt(m[3], 16)),",",
                 String(1),")");
         this.customRGB = converted;
-
+        this.customHEX = "#" + m[1] + m[2] + m[3];
         return converted;
     }
     isHexValid(hex){
@@ -103,7 +114,7 @@ export class HexRgbBox{
         return error;
     }
     getStyle(opacity:number){
-        return  this.inputValid ? this.changeOpacity(this.customRGB, opacity): "RGBA(255,255,255,1)";
+        return  this.inputValid ? this.changeOpacity(this.customRGB, opacity): "rgba(255,255,255,1)";
     }
     changeOpacity(color:string,opacity:number){
         return color.replace( "1)",opacity + ")" );
