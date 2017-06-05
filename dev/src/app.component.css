@@ -5,7 +5,6 @@ h1{
 h1, span, label, input, a{
     font-family: 'Inconsolata','Helvetica', 'Arial', 'Sans-Serif', 'serif';
 }
-
 .header{
     width: 100%;
     height: 50px;
@@ -28,16 +27,17 @@ h1, span, label, input, a{
     box-shadow: 0 4px 5px lightgrey;
 }
 .convertor-remove:after {
-     content: '✖'; /* UTF-8 symbol */
-     position: absolute;
-     right: 5px;
-     top: 5px;
-     color: #757370;
+    content: '✖'; /* UTF-8 symbol */
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #757370;
+    cursor: pointer;
 }
 .convertor-remove:hover:after {
     color: #E74C3C;
 }
-.save-result-wrap{
+#save-container{
     box-sizing: border-box;
     border: 1px solid lightgrey;
     border-radius: 5px;
@@ -47,7 +47,7 @@ h1, span, label, input, a{
     margin: auto;
 }
 .save-result{
-
+    cursor: pointer;
 }
 .save-result:after{
     content: '✖'; /* UTF-8 symbol */
@@ -57,7 +57,10 @@ h1, span, label, input, a{
     color: green;
     margin-left: 10px;
     transform: rotate(45deg);
-
+}
+.save-result:hover:after {
+    transform: scale(1.1);
+    transform: rotate(45deg);
 }
 .inputError{
     font-size: 11px;

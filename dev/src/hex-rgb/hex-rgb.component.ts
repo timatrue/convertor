@@ -14,7 +14,6 @@ import {Router} from "@angular/router";
             <a class="convertor-remove" (click)="deleteConvertor()"></a>
             <h1> HEX to RGB Converter</h1>
             <div id="hex-container">
-                
                 <div>
                     <label> HEX value:</label>
                     <input maxlength="7" #box (keyup)="onKey(box.value)" [value]="colorPickerVal" placeholder="Example: #722FAF">
@@ -27,9 +26,9 @@ import {Router} from "@angular/router";
             </div>
             <div id="color-container">
                 <input  #picker type="color" (change)="onColorPicker($event.target.value)" [value]="getHex()"/>
-                <div id="color-example" [ngStyle]="{'background-color': getStyle(1)}"></div>
+                <div id="sample-view" [ngStyle]="{'background-color': getStyle(1)}"></div>
             </div>
-                <a  routerLink="/ext-hex-rgb-convertor" *ngIf="router.url === '/'" >Extend convertor</a>
+                <a  routerLink="/ext-hex-rgb-convertor" *ngIf="router.url === '/'" >Extend convertor<i class="right-arrow"></i></a>
             
         </div>`
 })

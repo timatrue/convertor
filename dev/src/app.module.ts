@@ -10,10 +10,9 @@ import {DECLARATIONS} from "./app.declarations";
 import {ConvertorService} from "./convertors-service/convertors.service";
 import {MessageService} from "./message-service/message.service";
 import {MemoryService} from "./hex-rgb/hex-rgb-ext/memory.service";
-import {FormsModule} from "@angular/forms";
 
 @NgModule({
-    imports:[BrowserModule, FormsModule,
+    imports:[BrowserModule,
         RouterModule.forRoot([
         {path: 'binary-hexadecimal-convertor',
         component: BinDecBox},
