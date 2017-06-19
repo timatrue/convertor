@@ -1,9 +1,12 @@
 /**
  * Created by artem on 25/05/2017.
  */
-import {Component, EventEmitter, Output} from "@angular/core";
+import {Component, EventEmitter, Input, Output} from "@angular/core";
 import {CONVERTORS} from "../convertors-service/convertors.list";
 import './select.component.css';
+import {Router, Routes} from "@angular/router";
+import {appRoutesMap} from "../app-routing.module";
+import {ConvertorService} from "../convertors-service/convertors.service";
 
 @Component({
     selector: 'convertor-list',
@@ -20,17 +23,17 @@ import './select.component.css';
 
 export class ConvertorList{
 
-    convertors = this.getListConvertors();
+    private convertors = this.convertorService.getListConvertors();
     @Output() convertorClicked = new EventEmitter();
 
-    constructor(){}
+    constructor(private router: Router,
+                private convertorService: ConvertorService,){}
     requestConvertor(convertor: string){
         this.convertorClicked.emit(convertor)
     }
     getTitleOption(key: string){
         return CONVERTORS[key].name;
     }
-    getListConvertors(){
-        return Object.keys(CONVERTORS);
-    }
+
+
 }

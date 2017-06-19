@@ -28,7 +28,7 @@ import {Router} from "@angular/router";
                 <input  #picker type="color" (change)="onColorPicker($event.target.value)" [value]="getHex()"/>
                 <div id="sample-view" [ngStyle]="{'background-color': getStyle(1)}"></div>
             </div>
-                <a  routerLink="/ext-hex-rgb-convertor" *ngIf="router.url === '/'" >Extend convertor<i class="right-arrow"></i></a>
+                <a  routerLink="/ext-hex-rgb-convertor" (click)="deleteConvertors()" *ngIf="router.url === '/' || router.url === '/color-convertors'" >Extend convertor<i class="right-arrow"></i></a>
             
         </div>`
 })
@@ -43,16 +43,20 @@ export class HexRgbBox{
     componentId: string;
     constructor(public messageService: MessageService, private router: Router) { }
 
+
     onColorPicker(color:string){
         console.log(color);
         this.colorPickerVal = color;
         this.onKey(this.colorPickerVal);
     }
-    getHex(){
+    getHex():string{
         return this.inputValid ? this.customHEX : this.customDefault;
     }
     deleteConvertor():void{
         this.messageService.sendMessage(this.componentId);
+    }
+    deleteConvertors():void{
+        this.messageService.sendMessage("removeAll");
     }
     onKey(value: string) {
         let length = value.length;

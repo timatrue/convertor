@@ -1,8 +1,12 @@
+
 {
   "name": "cool_convertor",
   "version": "0.0.1",
   "description": "cool_convertor",
   "main": "index.js",
+    "engines": {
+    "npm": "6.10.3"
+  },
   "dependencies": {
     "@angular/common": "^4.1.1",
     "@angular/compiler": "^4.1.1",

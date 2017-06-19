@@ -5,4 +5,7 @@ import {HexRgbBox} from "../hex-rgb/hex-rgb.component";
  */
 export const CONVERTORS = {
     hexRgb: {component:HexRgbBox, name: "Hex-2-RGB convertor", id:"hexRgb"},
-    binDec:{component: BinDecBox, name: "Bin-2-Dec convertor", id:"binDec"}};
+    binDec:{component: BinDecBox, name: "Bin-2-Dec convertor", id:"binDec"}
+};
+
+export const Conv = new Map();

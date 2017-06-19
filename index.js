@@ -9,5 +9,6 @@ var prodMode = false;
 handle['/'] = requestHandler.start;
 handle['/ext-hex-rgb-convertor'] = requestHandler.colorConvertor;
 handle['/binary-convertor'] = requestHandler.binaryConvertor;
+handle['/color-convertors'] = requestHandler.colorConvertors;
 
 server.start(router.route, handle);

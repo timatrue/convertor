@@ -1,7 +1,7 @@
 /**
  * Created by artem on 21/05/2017.
  */
-import {Component, ComponentRef, ElementRef, EventEmitter, Input, Output} from '@angular/core';
+import {Component} from '@angular/core';
 import './bin-dec.convertor.css';
 import {MessageService} from "../message-service/message.service";
 
@@ -15,7 +15,7 @@ import {MessageService} from "../message-service/message.service";
             <div id="bin-container">
                 <div>
                     <label> Binary value:</label>
-                    <input maxlength="8" #box (keyup)="onKey(box.value)" placeholder="Example: 10101">
+                    <input maxlength="8" #box (keyup)="onKeyListener(box.value)" placeholder="Example: 10101">
                 </div>
                 <span class="inputError" *ngIf="!inputValid">{{ error }}</span>
             </div>
@@ -28,38 +28,38 @@ import {MessageService} from "../message-service/message.service";
 })
 export class BinDecBox{
 
-    values: string = '';
-    error: string = '';
-    inputValid: boolean = false;
-    componentId: string;
+    private binaryValue: string = '';
+    private error: string = '';
+    private inputValid: boolean = false;
+    private componentId: string;
 
     constructor(private messageService: MessageService){}
 
-    deleteConvertor():void{
+    deleteConvertor() : void {
         this.messageService.sendMessage(this.componentId);
     }
-    onKey(input: string) {
+    onKeyListener(input: string) : void {
         let length = input.length;
         if(length > 0){
             if(this.isInputValid(input)){
                 this.error = "";
                 this.inputValid = true;
-                this.values = String(parseInt(input, 2));
+                this.binaryValue = String(parseInt(input, 2));
             } else {
                 this.error = this.getError("format");
             }
         } else {
-            this.values = "";
+            this.binaryValue = "";
         }
         console.log(input);
     }
-    isInputValid(input: string){
+    isInputValid(input: string) : boolean {
         return input.match(/([a-z])|([^0-1])/i) === null;
     }
-    displayValue(){
-        return this.inputValid ? this.values : "";
+    displayValue() : string {
+        return this.inputValid ? this.binaryValue : "";
     }
-    getError(id) {
+    getError(id) : string {
         this.inputValid = false;
         let error = "";
         switch(id){
