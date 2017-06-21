@@ -5,7 +5,7 @@
   "description": "cool_convertor",
   "main": "index.js",
     "engines": {
-    "npm": "6.10.x"
+    "npm": "6.11.x"
   },
   "dependencies": {
     "@angular/common": "^4.1.1",

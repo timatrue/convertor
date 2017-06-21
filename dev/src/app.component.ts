@@ -2,21 +2,19 @@ import {
     AfterContentInit, AfterViewInit, Component, ComponentFactoryResolver, ComponentRef, OnInit, ViewChild,
     ViewContainerRef
 } from '@angular/core';
-import {ConvertorService} from "./convertors-service/convertors.service";
+import {NavigationEnd, Router} from "@angular/router";
 import {Subscription} from "rxjs/Subscription";
+import {ConvertorService} from "./convertors-service/convertors.service";
 import {MessageService} from "./message-service/message.service";
 import './app.component.css';
-import {NavigationEnd, NavigationStart, Router} from "@angular/router";
-//backtick
+
+//backtick`
 @Component({
     selector: 'convertors',
     template:
             `       
         <div class="header"></div>
-        <nav>
-            <a routerLink="color-convertors" (click)="removeAll()">Color convertors</a>
-            <a routerLink="color-convertors" (click)="removeAll()">Number convertors</a>
-        </nav>
+       <navigation (onClickHREF)="removeAll()"></navigation>
        <!-- <button (click)="consoleMap()">map</button>-->
         <div  *ngIf="router.url === '/'">
             <convertor-list  (convertorClicked)="onConvertor($event)"></convertor-list>

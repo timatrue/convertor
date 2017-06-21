@@ -1,11 +1,10 @@
 /**
  * Created by artem on 25/05/2017.
  */
-import {Component, EventEmitter, Input, Output} from "@angular/core";
+import {Component, EventEmitter, Output} from "@angular/core";
+import {Router} from "@angular/router";
 import {CONVERTORS} from "../convertors-service/convertors.list";
 import './select.component.css';
-import {Router, Routes} from "@angular/router";
-import {appRoutesMap} from "../app-routing.module";
 import {ConvertorService} from "../convertors-service/convertors.service";
 
 @Component({
@@ -28,8 +27,8 @@ export class ConvertorList{
 
     constructor(private router: Router,
                 private convertorService: ConvertorService,){}
-    requestConvertor(convertor: string){
-        this.convertorClicked.emit(convertor)
+                requestConvertor(convertor: string){
+            this.convertorClicked.emit(convertor)
     }
     getTitleOption(key: string){
         return CONVERTORS[key].name;
