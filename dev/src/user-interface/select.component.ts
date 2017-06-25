@@ -4,13 +4,13 @@
 import {Component, EventEmitter, Output} from "@angular/core";
 import {Router} from "@angular/router";
 import {CONVERTORS} from "../convertors-service/convertors.list";
-import './select.component.css';
 import {ConvertorService} from "../convertors-service/convertors.service";
+import './select.component.css';
 
 @Component({
     selector: 'convertor-list',
     template:
-            `
+            `        
         <div class="convertor-list">
             <select #selector>
                 <option *ngFor="let convertor of convertors" [value]="convertor">{{getTitleOption(convertor)}}</option>
@@ -27,12 +27,11 @@ export class ConvertorList{
 
     constructor(private router: Router,
                 private convertorService: ConvertorService,){}
-                requestConvertor(convertor: string){
-            this.convertorClicked.emit(convertor)
+    requestConvertor(convertor: string){
+                    this.convertorClicked.emit(convertor);
     }
+
     getTitleOption(key: string){
         return CONVERTORS[key].name;
     }
-
-
 }

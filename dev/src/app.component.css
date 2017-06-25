@@ -11,17 +11,12 @@ h1, span, label, input, a{
     background-color: cornflowerblue;
     margin-bottom: 15px;
 }
-.convertors, nav{
+.convertors{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
-nav{
-    margin: 10px;
-}
-nav a{
-    margin: 0 5px;
-}
+
 .convertor{
     position: relative;
     margin: 3px;
@@ -72,6 +67,7 @@ nav a{
     font-size: 11px;
     color: red;
 }
+/*NAVIGATION*/
 .link-back{
     box-sizing: border-box;
     padding: 5px;
