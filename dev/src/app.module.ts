@@ -9,13 +9,14 @@ import {DECLARATIONS} from "./app.declarations";
 import {ConvertorService} from "./convertors-service/convertors.service";
 import {MessageService} from "./message-service/message.service";
 import {MemoryService} from "./color-convertors/hex-rgb/hex-rgb-ext/memory.service";
+import {DecBinBox} from "./number-convertors/bin-dec/dec-bin.convertor";
 
 
 
 @NgModule({
     imports:[BrowserModule, appRoutingModule],
 	declarations: DECLARATIONS,
-    entryComponents: [HexRgbBox, BinDecBox],
+    entryComponents: [HexRgbBox, BinDecBox, DecBinBox],
     providers: [{provide: APP_BASE_HREF, useValue: '/'}, ConvertorService, MessageService, MemoryService],
     bootstrap:[AppComponent]
 })

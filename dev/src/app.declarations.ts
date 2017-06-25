@@ -9,9 +9,12 @@ import {NavigationBar} from "./user-interface/navigation.component";
 import {HexRgbExt} from "./color-convertors/hex-rgb/hex-rgb-ext/hex-rgb-ext.component";
 import {BinDexExt} from "./number-convertors/bin-dec/bin-dec-ext/bin-dec-ext";
 import {NumberConvertors} from "./number-convertors/number-convertors.component";
+import {DecBinBox} from "./number-convertors/bin-dec/dec-bin.convertor";
 
 /**
  * Created by artem on 23/05/2017.
  */
+const numbers = [BinDecBox,DecBinBox, BinDexExt];
 export const DECLARATIONS: any[] = [
-    AppComponent, ColorConvertors, NumberConvertors, ConvertorList, NavigationBar, HexRgbBox, HexRgbExt,  BinDecBox, BinDexExt, MemoryHexRgb, DynamicBackground];
+    AppComponent, ColorConvertors, NumberConvertors, ConvertorList, NavigationBar, HexRgbBox, HexRgbExt,  ...numbers, MemoryHexRgb, DynamicBackground];
+

@@ -9,7 +9,7 @@ h1, span, label, input, a{
     width: 100%;
     height: 50px;
     background-color: cornflowerblue;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .convertors{
     display: flex;
@@ -19,7 +19,7 @@ h1, span, label, input, a{
 
 .convertor{
     position: relative;
-    margin: 3px;
+    margin: 5px;
     display: flex;
     flex-flow: column wrap;
     padding:15px;
