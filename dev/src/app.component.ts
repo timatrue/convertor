@@ -1,5 +1,5 @@
 import {
-    AfterContentInit, AfterViewInit, Component, ComponentFactoryResolver, ComponentRef, OnInit, ViewChild,
+    Component, ComponentFactoryResolver, ComponentRef, OnDestroy, OnInit, ViewChild,
     ViewContainerRef
 } from '@angular/core';
 import {NavigationEnd, Router} from "@angular/router";
@@ -15,7 +15,6 @@ import './app.component.css';
             `       
         <div class="header"></div>
        <navigation (onClickHREF)="removeAll()"></navigation>
-       <!-- <button (click)="consoleMap()">map</button>-->
         <div  *ngIf="router.url === '/'">
             <convertor-list  (convertorClicked)="onConvertor($event)"></convertor-list>
             
@@ -30,7 +29,7 @@ import './app.component.css';
         
     `
 })
-export class AppComponent implements OnInit, AfterContentInit, AfterViewInit{
+export class AppComponent implements OnInit, OnDestroy{
 
     @ViewChild('target', {read: ViewContainerRef}) target: ViewContainerRef;
 
@@ -49,19 +48,9 @@ export class AppComponent implements OnInit, AfterContentInit, AfterViewInit{
             .subscribe(message => {
                 console.log(this.url,"vs", this.getCurrentUrl())
                 if(this.url === this.getCurrentUrl()){
-                message.id === "removeAll" ? this.removeAll() : (message.id === "initAll" ?  this.ngOnInit() : this.removeChild(message));
+                    message.id === "removeAll" ? this.removeAll() : (message.id === "initAll" ?  this.ngOnInit() : this.removeChild(message));
                 }
             })
-    }
-
-    ngOnInit(){
-        this.onRouteChanged();
-    }
-    ngAfterContentInit() {
-       //console.log("ngAfterContentInit")
-    }
-    ngAfterViewInit(){
-        //console.log("ngAfterViewInit")
     }
     onRouteChanged(){
         this.router.events
@@ -96,12 +85,12 @@ export class AppComponent implements OnInit, AfterContentInit, AfterViewInit{
         this.componentRef = componentRef;
         this.index += 1;
     }
+    ngOnInit(){
+        this.onRouteChanged();
+    }
     ngOnDestroy() {
         console.log("ngOnDestroy",this.target);
         this.subscription.unsubscribe();
-    }
-    consoleMap(){
-        console.log("this map", this.idMap);
     }
     getService(component: string){
         return this.convertorService.getService(component);
@@ -109,6 +98,4 @@ export class AppComponent implements OnInit, AfterContentInit, AfterViewInit{
     getCurrentUrl(): string {
         return this.router.url;
     }
-
-
 }
