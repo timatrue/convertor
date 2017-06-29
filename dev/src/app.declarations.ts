@@ -10,11 +10,15 @@ import {HexRgbExt} from "./color-convertors/hex-rgb/hex-rgb-ext/hex-rgb-ext.comp
 import {BinDexExt} from "./number-convertors/bin-dec/bin-dec-ext/bin-dec-ext";
 import {NumberConvertors} from "./number-convertors/number-convertors.component";
 import {DecBinBox} from "./number-convertors/bin-dec/dec-bin.convertor";
+import {RecordNumbers} from "./number-convertors/records/record.component";
 
 /**
  * Created by artem on 23/05/2017.
  */
-const numbers = [BinDecBox,DecBinBox, BinDexExt];
-export const DECLARATIONS: any[] = [
-    AppComponent, ColorConvertors, NumberConvertors, ConvertorList, NavigationBar, HexRgbBox, HexRgbExt,  ...numbers, MemoryHexRgb, DynamicBackground];
+const parents = [AppComponent, ColorConvertors, NumberConvertors];
+const numbers = [BinDecBox, DecBinBox, BinDexExt, RecordNumbers];
+const colors = [HexRgbBox, HexRgbExt, MemoryHexRgb];
+const ui = [ConvertorList, NavigationBar, DynamicBackground];
+
+export const DECLARATIONS: any[] = [...parents, ...colors, ...numbers, ...ui];
 

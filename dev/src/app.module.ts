@@ -10,6 +10,8 @@ import {ConvertorService} from "./convertors-service/convertors.service";
 import {MessageService} from "./message-service/message.service";
 import {MemoryService} from "./color-convertors/hex-rgb/hex-rgb-ext/memory.service";
 import {DecBinBox} from "./number-convertors/bin-dec/dec-bin.convertor";
+import {RecordNumbers} from "./number-convertors/records/record.component";
+import {RecordService} from "./number-convertors/records/record.service";
 
 
 
@@ -17,7 +19,7 @@ import {DecBinBox} from "./number-convertors/bin-dec/dec-bin.convertor";
     imports:[BrowserModule, appRoutingModule],
 	declarations: DECLARATIONS,
     entryComponents: [HexRgbBox, BinDecBox, DecBinBox],
-    providers: [{provide: APP_BASE_HREF, useValue: '/'}, ConvertorService, MessageService, MemoryService],
+    providers: [{provide: APP_BASE_HREF, useValue: '/'}, ConvertorService, MessageService, MemoryService, RecordService],
     bootstrap:[AppComponent]
 })
 export class AppModule{ }
