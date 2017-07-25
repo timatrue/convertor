@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0f881c4-b50e-47e3-a66d-0787813ecb4c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/src/app.declarations.ts" afterPath="$PROJECT_DIR$/dev/src/app.declarations.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/bin-dec-ext.ts" afterPath="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/bin-dec-ext.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/src/app.module.ts" afterPath="$PROJECT_DIR$/dev/src/app.module.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/app.js" afterPath="$PROJECT_DIR$/public/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/polyfill.js" afterPath="$PROJECT_DIR$/public/app/polyfill.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,45 +20,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/src/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="45" column="47" lean-forward="true" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
-              <folding>
-                <marker date="1498498709990" expanded="true" signature="637:753" ph="..." />
-                <marker date="1498498709990" expanded="true" signature="803:946" ph="..." />
-                <marker date="1498498709990" expanded="true" signature="843:926" ph="..." />
-                <marker date="1498498709990" expanded="true" signature="843:927" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app-routing.module.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app-routing.module.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dev/src/app-routing.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+            <state relative-caret-position="1000">
+              <caret line="50" column="1" lean-forward="false" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
               <folding>
-                <element signature="e#0#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bin-dec-ext.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/bin-dec-ext.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="42" column="47" lean-forward="false" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
-              <folding>
-                <element signature="e#43#83#0" expanded="true" />
-                <marker date="1498808538054" expanded="true" signature="483:1183" ph="..." />
-                <marker date="1498808538054" expanded="true" signature="551:879" ph="..." />
-                <marker date="1498808538054" expanded="true" signature="552:879" ph="..." />
-                <marker date="1498808538054" expanded="true" signature="675:860" ph="..." />
-                <marker date="1498808538054" expanded="true" signature="919:1052" ph="..." />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,46 +35,70 @@
       <file leaf-file-name="bin-dec.convertor.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec.convertor.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="67" column="50" lean-forward="false" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
-              <folding>
-                <marker date="1498808000507" expanded="true" signature="390:1274" ph="..." />
-                <marker date="1498808000507" expanded="true" signature="531:859" ph="..." />
-                <marker date="1498808000507" expanded="true" signature="532:859" ph="..." />
-                <marker date="1498808000507" expanded="true" signature="655:835" ph="..." />
-                <marker date="1498808000507" expanded="true" signature="655:840" ph="..." />
-                <marker date="1498808000507" expanded="true" signature="898:1031" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="record.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/records/record.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-              <folding>
-                <element signature="e#43#98#0" expanded="true" />
-                <marker date="1498808000714" expanded="true" signature="334:726" ph="..." />
-                <marker date="1498808000714" expanded="true" signature="434:711" ph="..." />
-                <marker date="1498808000714" expanded="true" signature="477:616" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dec-bin-ext.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/dec-bin-ext.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="273">
+              <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
               <folding>
                 <element signature="e#43#83#0" expanded="true" />
-                <marker date="1498807579040" expanded="true" signature="425:1121" ph="..." />
-                <marker date="1498807579040" expanded="true" signature="493:819" ph="..." />
-                <marker date="1498807579040" expanded="true" signature="617:800" ph="..." />
-                <marker date="1498807579040" expanded="true" signature="859:991" ph="..." />
+                <marker date="1500992043151" expanded="true" signature="390:1305" ph="..." />
+                <marker date="1500992043151" expanded="true" signature="531:859" ph="..." />
+                <marker date="1500992043151" expanded="true" signature="532:859" ph="..." />
+                <marker date="1500992043151" expanded="true" signature="655:835" ph="..." />
+                <marker date="1500992043151" expanded="true" signature="655:840" ph="..." />
+                <marker date="1500992043151" expanded="true" signature="898:1031" ph="..." />
+                <marker date="1500992043151" expanded="true" signature="1113:1289" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bin-dec-ext.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/bin-dec-ext.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+              <folding>
+                <element signature="e#43#83#0" expanded="true" />
+                <marker date="1500978742562" expanded="true" signature="436:1136" ph="..." />
+                <marker date="1500978742562" expanded="true" signature="504:832" ph="..." />
+                <marker date="1500978742562" expanded="true" signature="505:832" ph="..." />
+                <marker date="1500978742562" expanded="true" signature="628:813" ph="..." />
+                <marker date="1500978742562" expanded="true" signature="872:1005" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hex-rgb.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="32" column="61" lean-forward="false" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="78" />
+              <folding>
+                <marker date="1500992043340" expanded="true" signature="390:1608" ph="..." />
+                <marker date="1500992043340" expanded="true" signature="524:868" ph="..." />
+                <marker date="1500992043340" expanded="true" signature="526:863" ph="..." />
+                <marker date="1500992043340" expanded="true" signature="649:849" ph="..." />
+                <marker date="1500992043340" expanded="true" signature="908:1038" ph="..." />
+                <marker date="1500992043340" expanded="true" signature="1077:1299" ph="..." />
+                <marker date="1500992043340" expanded="true" signature="1191:1299" ph="..." />
+                <marker date="1500992043340" expanded="true" signature="1319:1593" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hex-rgb-ext.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb-ext/hex-rgb-ext.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-60">
+              <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              <folding>
+                <element signature="e#43#91#0" expanded="true" />
+                <marker date="1500986048305" expanded="true" signature="478:1442" ph="..." />
+                <marker date="1500986048305" expanded="true" signature="539:882" ph="..." />
+                <marker date="1500986048305" expanded="true" signature="663:863" ph="..." />
+                <marker date="1500986048305" expanded="true" signature="922:1051" ph="..." />
+                <marker date="1500986048305" expanded="true" signature="1090:1312" ph="..." />
               </folding>
             </state>
           </provider>
@@ -119,8 +111,8 @@
       <list>
         <option value="tsconfig.json" />
         <option value="HTML File" />
-        <option value="TypeScript File" />
         <option value="CSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -141,6 +133,8 @@
       <find>initA</find>
       <find>ngOnInit</find>
       <find>router</find>
+      <find>convertorId</find>
+      <find>MemoryService</find>
     </findStrings>
     <replaceStrings>
       <replace>onKeyListener</replace>
@@ -152,14 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dev/src/hex-rgb/hex-rgb-ext/memory.component.ts" />
-        <option value="$PROJECT_DIR$/dev/src/hex-rgb/hex-rgb-ext/color.directive.ts" />
-        <option value="$PROJECT_DIR$/dev/src/hex-rgb/hex-rgb-ext/memory.item.ts" />
-        <option value="$PROJECT_DIR$/dev/src/hex-rgb/hex-rgb.component.css" />
-        <option value="$PROJECT_DIR$/dev/src/hex-rgb/hex-rgb-ext/memory.css" />
-        <option value="$PROJECT_DIR$/dev/src/hex-rgb/hex-rgb-ext/memory.service.ts" />
-        <option value="$PROJECT_DIR$/dev/src/hex-rgb/hex-rgb-ext/memory.hex-rgb.component.ts" />
-        <option value="$PROJECT_DIR$/dev/src/bin-dec/bin-dec-ext/bin-dec-ext.ts" />
         <option value="$PROJECT_DIR$/dev/src/bin-dec/bin-dec.convertor.ts" />
         <option value="$PROJECT_DIR$/dev/src/convertors-service/convertors.service.ts" />
         <option value="$PROJECT_DIR$/index.js" />
@@ -171,7 +157,6 @@
         <option value="$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb-ext/memory.hex-rgb.component.ts" />
         <option value="$PROJECT_DIR$/dev/src/convertor-interface.ts" />
         <option value="$PROJECT_DIR$/dev/src/user-interface/select.component.ts" />
-        <option value="$PROJECT_DIR$/dev/src/number-convertors/number-convertors.component.ts" />
         <option value="$PROJECT_DIR$/dev/src/convertors-service/convertors.list.ts" />
         <option value="$PROJECT_DIR$/dev/src/user-interface/navigation.component.ts" />
         <option value="$PROJECT_DIR$/dev/src/user-interface/navigation.component.css" />
@@ -179,7 +164,6 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/dev/src/color-convertors/color-convertors.component.ts" />
         <option value="$PROJECT_DIR$/dev/src/app.component.ts" />
-        <option value="$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.ts" />
         <option value="$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.css" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec.convertor.css" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/memory/memory.service.ts" />
@@ -187,22 +171,32 @@
         <option value="$PROJECT_DIR$/dev/src/number-convertors/memory/memory.item.ts" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/memory/record.service.ts" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/memory/record.component.ts" />
-        <option value="$PROJECT_DIR$/dev/src/app.module.ts" />
         <option value="$PROJECT_DIR$/dev/src/app.component.css" />
-        <option value="$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb-ext/hex-rgb-ext.component.ts" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/records/record.item.ts" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/records/record.service.ts" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/records/record.component.css" />
         <option value="$PROJECT_DIR$/dev/src/user-interface/button-save-input.ts" />
-        <option value="$PROJECT_DIR$/dev/src/app.declarations.ts" />
         <option value="$PROJECT_DIR$/dev/src/user-interface/button-save.component.css" />
         <option value="$PROJECT_DIR$/dev/src/user-interface/button-save.component.ts" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/dec-bin.convertor.ts" />
-        <option value="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/dec-bin-ext.ts" />
-        <option value="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec.convertor.ts" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/records/record.component.ts" />
-        <option value="$PROJECT_DIR$/dev/src/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/dev/src/color-convertors/records.ts" />
+        <option value="$PROJECT_DIR$/dev/src/number-convertors/records/record-numbers.item.ts" />
+        <option value="$PROJECT_DIR$/dev/src/number-convertors/records/record-numbers.service.ts" />
+        <option value="$PROJECT_DIR$/dev/src/number-convertors/number-convertors.component.ts" />
+        <option value="$PROJECT_DIR$/dev/src/color-convertors/records/record-colors.item.ts" />
+        <option value="$PROJECT_DIR$/dev/src/color-convertors/records/record-colors.service.ts" />
+        <option value="$PROJECT_DIR$/dev/src/number-convertors/records/record-numbers.component.ts" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/bin-dec-ext.ts" />
+        <option value="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/dec-bin-ext.ts" />
+        <option value="$PROJECT_DIR$/dev/src/color-convertors/records/record-colors.component.css" />
+        <option value="$PROJECT_DIR$/dev/src/color-convertors/records/record-colors.component.ts" />
+        <option value="$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb-ext/hex-rgb-ext.component.ts" />
+        <option value="$PROJECT_DIR$/dev/src/app.declarations.ts" />
+        <option value="$PROJECT_DIR$/dev/src/app.module.ts" />
+        <option value="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec.convertor.ts" />
+        <option value="$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.ts" />
+        <option value="$PROJECT_DIR$/dev/src/app-routing.module.ts" />
       </list>
     </option>
   </component>
@@ -218,9 +212,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1370" />
-    <option name="height" value="735" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -238,6 +233,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -281,115 +277,10 @@
               <option name="myItemId" value="dev" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="number-convertors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="convertor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="convertor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="number-convertors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="records" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="convertor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="convertor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="number-convertors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin-dec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="convertor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="convertor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="number-convertors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin-dec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin-dec-ext" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="convertor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="convertor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -402,16 +293,17 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\javascript\convertor\dev\src\number-convertors\bin-dec" />
-      <recent name="C:\javascript\convertor\dev\src\hex-rgb" />
-      <recent name="C:\javascript\convertor\dev\src\bin-dec" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\javascript\convertor\dev\src\number-convertors" />
       <recent name="C:\javascript\convertor\dev\src\color-convertors" />
       <recent name="C:\javascript\convertor\dev\src\hex-rgb\hex-rgb-ext" />
       <recent name="C:\javascript\convertor\dev\src\view-container" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\javascript\convertor\dev\src\color-convertors\records" />
+      <recent name="C:\javascript\convertor\dev\src\number-convertors\bin-dec" />
+      <recent name="C:\javascript\convertor\dev\src\hex-rgb" />
+      <recent name="C:\javascript\convertor\dev\src\bin-dec" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -588,29 +480,29 @@
       <workItem from="1498498220342" duration="747000" />
       <workItem from="1498631832344" duration="5419000" />
       <workItem from="1498720981483" duration="13586000" />
-      <workItem from="1498747191009" duration="16533000" />
+      <workItem from="1498747191009" duration="17138000" />
+      <workItem from="1500973454594" duration="11494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279038000" />
+    <option name="totallyTimeSpent" value="291137000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24593796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24524158" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.216" sideWeight="0.51477104" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21451104" sideWeight="0.51756954" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.216" sideWeight="0.48522896" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21451104" sideWeight="0.48243046" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -643,17 +535,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/convertors/bin-dec.convertor.css" />
-    <entry file="file://$PROJECT_DIR$/dev/src/convertors/hex-rgb.component.ts" />
-    <entry file="file://$PROJECT_DIR$/dev/src/convertors/hex-rgb.component.css" />
-    <entry file="file://$PROJECT_DIR$/dev/src/convertors/bin-dec.convertor.ts" />
     <entry file="file://$PROJECT_DIR$/dev/src/view-container/view.container.instance.ts" />
     <entry file="file://$PROJECT_DIR$/dev/src/view-container/view.container.component.ts" />
     <entry file="file://$PROJECT_DIR$/dev/src/view-container/view.container.directive.ts" />
@@ -765,23 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding>
-            <element signature="e#43#83#0" expanded="false" />
-            <marker date="1498632613993" expanded="true" signature="390:1535" ph="..." />
-            <marker date="1498632613993" expanded="true" signature="524:868" ph="..." />
-            <marker date="1498632613993" expanded="true" signature="526:863" ph="..." />
-            <marker date="1498632613993" expanded="true" signature="649:849" ph="..." />
-            <marker date="1498632613993" expanded="true" signature="908:1038" ph="..." />
-            <marker date="1498632613993" expanded="true" signature="1077:1299" ph="..." />
-            <marker date="1498632613993" expanded="true" signature="1191:1299" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dev/src/user-interface/navigation.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
@@ -801,98 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/number-convertors.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding>
-            <marker date="1498400601517" expanded="true" signature="425:529" ph="..." />
-            <marker date="1498400601517" expanded="true" signature="562:689" ph="..." />
-            <marker date="1498400601517" expanded="true" signature="598:674" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="21" column="119" lean-forward="false" selection-start-line="21" selection-start-column="119" selection-end-line="21" selection-end-column="119" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb-ext/memory.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb-ext/hex-rgb-ext.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
-          <folding>
-            <element signature="e#43#91#0" expanded="true" />
-            <marker date="1498749508553" expanded="true" signature="454:1513" ph="..." />
-            <marker date="1498749508553" expanded="true" signature="515:858" ph="..." />
-            <marker date="1498749508553" expanded="true" signature="639:839" ph="..." />
-            <marker date="1498749508553" expanded="true" signature="898:1027" ph="..." />
-            <marker date="1498749508553" expanded="true" signature="1066:1288" ph="..." />
-            <marker date="1498749508553" expanded="true" signature="1326:1498" ph="..." />
-            <marker date="1498749508553" expanded="true" signature="1328:1498" ph="..." />
-            <marker date="1498749508553" expanded="true" signature="1411:1479" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb-ext/memory.hex-rgb.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="49" />
-          <folding>
-            <element signature="e#43#83#0" expanded="false" />
-            <marker date="1498062924347" expanded="true" signature="239:621" ph="..." />
-            <marker date="1498062924347" expanded="true" signature="325:606" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb-ext/memory.item.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb-ext/memory.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/records/record.item.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc;n#RecordItem#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/records/record.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,14 +701,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/records.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/bin-dec/dec-bin.convertor.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding>
+            <marker date="1498807579097" expanded="true" signature="390:1271" ph="..." />
+            <marker date="1498807579097" expanded="true" signature="531:857" ph="..." />
+            <marker date="1498807579097" expanded="true" signature="532:857" ph="..." />
+            <marker date="1498807579097" expanded="true" signature="655:838" ph="..." />
+            <marker date="1498807579097" expanded="true" signature="897:1029" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev/src/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="45" column="47" lean-forward="true" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
           <folding>
             <marker date="1498498709990" expanded="true" signature="637:753" ph="..." />
             <marker date="1498498709990" expanded="true" signature="803:946" ph="..." />
@@ -946,21 +739,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/app.declarations.ts">
+    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/number-convertors.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="23" column="70" lean-forward="false" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
+        <state relative-caret-position="40">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="e#43#109#0" expanded="true" />
+            <marker date="1500978228984" expanded="true" signature="425:529" ph="..." />
+            <marker date="1500978228984" expanded="true" signature="562:689" ph="..." />
+            <marker date="1500978228984" expanded="true" signature="598:674" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/records/record-numbers.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/user-interface/button-save.component.ts">
+    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/records/record-numbers.item.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        <state relative-caret-position="80">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#43#112#0" expanded="true" />
-            <marker date="1498807157000" expanded="true" signature="306:366" ph="..." />
+            <element signature="n#!!doc;n#RecordNumberSample#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/records/record-colors.item.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/records/record-colors.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="32" />
+          <folding>
+            <element signature="e#43#84#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/records/record-numbers.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="e#43#84#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/records/record-numbers.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="40" />
+          <folding>
+            <element signature="e#43#98#0" expanded="true" />
+            <marker date="1500978515801" expanded="true" signature="315:707" ph="..." />
+            <marker date="1500978515801" expanded="true" signature="415:692" ph="..." />
+            <marker date="1500978515801" expanded="true" signature="458:597" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/dec-bin-ext.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="36" column="59" lean-forward="true" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+          <folding>
+            <element signature="e#43#83#0" expanded="true" />
+            <marker date="1500978742471" expanded="true" signature="441:1137" ph="..." />
+            <marker date="1500978742471" expanded="true" signature="509:835" ph="..." />
+            <marker date="1500978742471" expanded="true" signature="633:816" ph="..." />
+            <marker date="1500978742471" expanded="true" signature="875:1007" ph="..." />
           </folding>
         </state>
       </provider>
@@ -973,92 +833,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/records/record.service.ts">
+    <entry file="file://$PROJECT_DIR$/dev/src/user-interface/button-save.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/dec-bin-ext.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        <state relative-caret-position="20">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding>
-            <element signature="e#43#83#0" expanded="true" />
-            <marker date="1498807579040" expanded="true" signature="425:1121" ph="..." />
-            <marker date="1498807579040" expanded="true" signature="493:819" ph="..." />
-            <marker date="1498807579040" expanded="true" signature="617:800" ph="..." />
-            <marker date="1498807579040" expanded="true" signature="859:991" ph="..." />
+            <element signature="e#43#112#0" expanded="false" />
+            <marker date="1498807157000" expanded="true" signature="306:366" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/app-routing.module.ts">
+    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/records/record-colors.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        <state relative-caret-position="240">
+          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding>
-            <element signature="e#0#73#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#98#0" expanded="true" />
+            <marker date="1500985858475" expanded="true" signature="311:790" ph="..." />
+            <marker date="1500985858475" expanded="true" signature="411:775" ph="..." />
+            <marker date="1500985858475" expanded="true" signature="454:587" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/records/record-colors.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/app.declarations.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="22" column="37" lean-forward="false" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb-ext/memory.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb-ext/memory.hex-rgb.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb-ext/memory.item.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb-ext/memory.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/bin-dec-ext.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+          <folding>
+            <element signature="e#43#83#0" expanded="true" />
+            <marker date="1500978742562" expanded="true" signature="436:1136" ph="..." />
+            <marker date="1500978742562" expanded="true" signature="504:832" ph="..." />
+            <marker date="1500978742562" expanded="true" signature="505:832" ph="..." />
+            <marker date="1500978742562" expanded="true" signature="628:813" ph="..." />
+            <marker date="1500978742562" expanded="true" signature="872:1005" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb-ext/hex-rgb-ext.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#43#91#0" expanded="true" />
+            <marker date="1500986048305" expanded="true" signature="478:1442" ph="..." />
+            <marker date="1500986048305" expanded="true" signature="539:882" ph="..." />
+            <marker date="1500986048305" expanded="true" signature="663:863" ph="..." />
+            <marker date="1500986048305" expanded="true" signature="922:1051" ph="..." />
+            <marker date="1500986048305" expanded="true" signature="1090:1312" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec.convertor.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="67" column="50" lean-forward="false" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
-          <folding>
-            <marker date="1498808000507" expanded="true" signature="390:1274" ph="..." />
-            <marker date="1498808000507" expanded="true" signature="531:859" ph="..." />
-            <marker date="1498808000507" expanded="true" signature="532:859" ph="..." />
-            <marker date="1498808000507" expanded="true" signature="655:835" ph="..." />
-            <marker date="1498808000507" expanded="true" signature="655:840" ph="..." />
-            <marker date="1498808000507" expanded="true" signature="898:1031" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/bin-dec/dec-bin.convertor.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        <state relative-caret-position="273">
+          <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
           <folding>
             <element signature="e#43#83#0" expanded="true" />
-            <marker date="1498807579097" expanded="true" signature="390:1271" ph="..." />
-            <marker date="1498807579097" expanded="true" signature="531:857" ph="..." />
-            <marker date="1498807579097" expanded="true" signature="532:857" ph="..." />
-            <marker date="1498807579097" expanded="true" signature="655:838" ph="..." />
-            <marker date="1498807579097" expanded="true" signature="897:1029" ph="..." />
+            <marker date="1500992043151" expanded="true" signature="390:1305" ph="..." />
+            <marker date="1500992043151" expanded="true" signature="531:859" ph="..." />
+            <marker date="1500992043151" expanded="true" signature="532:859" ph="..." />
+            <marker date="1500992043151" expanded="true" signature="655:835" ph="..." />
+            <marker date="1500992043151" expanded="true" signature="655:840" ph="..." />
+            <marker date="1500992043151" expanded="true" signature="898:1031" ph="..." />
+            <marker date="1500992043151" expanded="true" signature="1113:1289" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/records/record.component.ts">
+    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+        <state relative-caret-position="263">
+          <caret line="32" column="61" lean-forward="false" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="78" />
           <folding>
-            <element signature="e#43#98#0" expanded="true" />
-            <marker date="1498808000714" expanded="true" signature="334:726" ph="..." />
-            <marker date="1498808000714" expanded="true" signature="434:711" ph="..." />
-            <marker date="1498808000714" expanded="true" signature="477:616" ph="..." />
+            <marker date="1500992043340" expanded="true" signature="390:1608" ph="..." />
+            <marker date="1500992043340" expanded="true" signature="524:868" ph="..." />
+            <marker date="1500992043340" expanded="true" signature="526:863" ph="..." />
+            <marker date="1500992043340" expanded="true" signature="649:849" ph="..." />
+            <marker date="1500992043340" expanded="true" signature="908:1038" ph="..." />
+            <marker date="1500992043340" expanded="true" signature="1077:1299" ph="..." />
+            <marker date="1500992043340" expanded="true" signature="1191:1299" ph="..." />
+            <marker date="1500992043340" expanded="true" signature="1319:1593" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/bin-dec-ext.ts">
+    <entry file="file://$PROJECT_DIR$/dev/src/app-routing.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="42" column="47" lean-forward="false" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+        <state relative-caret-position="1000">
+          <caret line="50" column="1" lean-forward="false" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
           <folding>
-            <element signature="e#43#83#0" expanded="true" />
-            <marker date="1498808538054" expanded="true" signature="483:1183" ph="..." />
-            <marker date="1498808538054" expanded="true" signature="551:879" ph="..." />
-            <marker date="1498808538054" expanded="true" signature="552:879" ph="..." />
-            <marker date="1498808538054" expanded="true" signature="675:860" ph="..." />
-            <marker date="1498808538054" expanded="true" signature="919:1052" ph="..." />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

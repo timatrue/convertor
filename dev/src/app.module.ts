@@ -8,10 +8,9 @@ import {APP_BASE_HREF} from '@angular/common';
 import {DECLARATIONS} from "./app.declarations";
 import {ConvertorService} from "./convertors-service/convertors.service";
 import {MessageService} from "./message-service/message.service";
-import {MemoryService} from "./color-convertors/hex-rgb/hex-rgb-ext/memory.service";
 import {DecBinBox} from "./number-convertors/bin-dec/dec-bin.convertor";
-import {RecordNumbers} from "./number-convertors/records/record.component";
-import {RecordService} from "./number-convertors/records/record.service";
+import {RecordNumbersService} from "./number-convertors/records/record-numbers.service";
+import {RecordColorsService} from "./color-convertors/records/record-colors.service";
 
 
 
@@ -19,7 +18,8 @@ import {RecordService} from "./number-convertors/records/record.service";
     imports:[BrowserModule, appRoutingModule],
 	declarations: DECLARATIONS,
     entryComponents: [HexRgbBox, BinDecBox, DecBinBox],
-    providers: [{provide: APP_BASE_HREF, useValue: '/'}, ConvertorService, MessageService, MemoryService, RecordService],
+    providers: [{provide: APP_BASE_HREF, useValue: '/'},
+        ConvertorService, MessageService, RecordNumbersService, RecordColorsService],
     bootstrap:[AppComponent]
 })
 export class AppModule{ }
