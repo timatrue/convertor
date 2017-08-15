@@ -13,6 +13,8 @@ import {DecBinExt} from "./number-convertors/bin-dec/bin-dec-ext/dec-bin-ext";
 import {SaveInput} from "./user-interface/button-save.component";
 import {RecordNumbers} from "./number-convertors/records/record-numbers.component";
 import {RecordColors} from "./color-convertors/records/record-colors.component";
+import {InputOut} from "./user-interface/input-out.component";
+import {InputIn} from "./user-interface/input-in.component";
 
 
 /**
@@ -21,7 +23,7 @@ import {RecordColors} from "./color-convertors/records/record-colors.component";
 const parents = [AppComponent, ColorConvertors, NumberConvertors];
 const numbers = [BinDecBox, BinDecExt, DecBinBox, DecBinExt, RecordNumbers];
 const colors = [HexRgbBox, HexRgbExt, RecordColors];
-const ui = [ConvertorList, NavigationBar, DynamicBackground, SaveInput];
+const ui = [ConvertorList, NavigationBar, DynamicBackground, SaveInput, InputOut, InputIn];
 
 export const DECLARATIONS: any[] = [...parents, ...colors, ...numbers, ...ui];
 
