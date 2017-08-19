@@ -1,0 +1,20 @@
+.convertor-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 3px;
+    margin-bottom: 10px;
+}
+.convertor-list button, input{
+    font-size: 14px;
+}
+.convertor-list button{
+    background-color: #E74C3C;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    cursor: pointer;
+}

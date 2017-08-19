@@ -1,0 +1,41 @@
+.records-list{
+    margin-top: 10px;
+}
+.records-list > div{
+    margin-bottom: 5px;
+}
+.container-record{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    box-shadow: 0 2px 4px lightgrey;
+}
+.record-value{
+    display: flex;
+    flex-flow: row wrap;
+}
+.record-value span{
+    margin: 0 5px;
+}
+#record-color{
+    padding: 10px;
+    margin-left: auto;
+    cursor: pointer;
+    box-shadow: 0 2px 3px lightgrey;
+}
+.record-remove:after {
+    content: '✖'; /* UTF-8 symbol */
+    position: relative;
+    color: #757370;
+    cursor: pointer;
+    padding: 5px;
+}
+.record-remove:hover:after {
+    color: #E74C3C;
+}
+

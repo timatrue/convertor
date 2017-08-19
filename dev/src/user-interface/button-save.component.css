@@ -1,0 +1,29 @@
+#container-save{
+    display: inline;
+    width: 100%;
+    text-align: right;
+}
+.save-result{
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px lightgrey;
+    color: white;
+    background-color: #3498DB;
+}
+.save-result:after{
+    content: '✖'; /* UTF-8 symbol */
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    margin-left: 5px;
+    transform: rotate(45deg);
+}
+.save-result:hover {
+    transform: scale(1.01);
+    background-color: #2980B9 !important;
+}

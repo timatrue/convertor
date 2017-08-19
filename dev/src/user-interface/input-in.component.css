@@ -1,0 +1,10 @@
+#container-input{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.inputError{
+    font-size: 11px;
+    color: red;
+}
