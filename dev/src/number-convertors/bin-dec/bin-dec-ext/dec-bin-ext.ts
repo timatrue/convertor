@@ -13,15 +13,9 @@ import {RecordNumbersService} from "../../records/record-numbers.service";
             `
         <div class="convertor bin">
             <h1> Decimal to Binary Converter</h1>
-            <div >
-                <span class="inputError" *ngIf="!inputValid">{{ error }}</span>
-                <div id="container-input">
-                    <label>Decimal:</label>
-                    <input maxlength="16" #box (keyup)="onKeyListener(box.value)" placeholder="Example: 128">
-                </div>
-            </div>
+            <input-in (inputInEmitter)="onKey($event)" [results]="results" [meta]="metaInData"></input-in>
             <input-out [result]="displayValue()" [labelText]="labelText"></input-out>
-           <save-input id="container-save" [inputValid]="inputValid" (addValueEmitter)="saveValue()"></save-input>
+            <save-input id="container-save" [inputValid]="inputValid" (addValueEmitter)="saveValue()"></save-input>
         </div>
         <record-numbers [id]="convertorId" ></record-numbers>
     `

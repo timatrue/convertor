@@ -14,21 +14,18 @@ import './bin-dec.convertor.css';
         <div class="convertor bin">
             <a class="convertor-remove" (click)="deleteConvertor()"></a>
             <h1> Binary to Decimal Converter</h1>
-            <div >
-                <span class="inputError" *ngIf="!inputValid">{{ error }}</span>
-                <div id="container-input">
-                    <label> Binary:</label>
-                    <input maxlength="16" #box (keyup)="onKeyListener(box.value)" placeholder="Example: 10101">
-                </div>
-            </div>
+            <input-in (inputInEmitter)="onKey($event)" [results]="results" [meta]="metaInData"></input-in>
             <input-out [result]="displayValue()" [labelText]="labelText"></input-out>
             <a [routerLink]="['/number-convertors', 'binary-decimal-convertor']" 
                *ngIf="router.url === '/' || router.url === '/number-convertors'" 
-               (click)="deleteConvertors()"  >Extend convertor<i class="right-arrow"></i></a>
-
+               (click)="deleteConvertors()"  >Extend convertor<i class="right-arrow"></i>
+            </a>
         </div>`
 })
 export class BinDecBox implements ConvertorBase{
+    public metaInData: any = {labelText: "Binary", length: "16", holder: "Example: 10101"};
+    public results: any = {valid: ()=> this.inputValid, error: ()=> this.error, color: ()=> null};
+
     public labelText: string = "Decimal";
     public decimalValue: string = '';
     public binaryValue: string = '';
@@ -44,7 +41,7 @@ export class BinDecBox implements ConvertorBase{
     deleteConvertors():void{
         this.messageService.sendMessage("removeAll");
     }
-    onKeyListener(input: string) : void {
+    onKey(input: string) : void {
         let length = input.length;
         if(length > 0){
             if(this.isInputValid(input)){

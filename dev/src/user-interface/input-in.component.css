@@ -4,7 +4,14 @@
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.inputError{
+#container-input input{
+    width: 185px;
+}
+.container-error{
+    height: 20px;
+    margin-bottom: 5px;
+}
+.input-error{
     font-size: 11px;
     color: red;
 }

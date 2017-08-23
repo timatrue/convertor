@@ -16,7 +16,7 @@ import '../hex-rgb.component.css';
             <input-in (inputInEmitter)="onKey($event)" [results]="results" [meta]="metaInData"></input-in>
             <input-out [result]="displayValue()" [labelText]="labelOutText" ></input-out>
             <div id="color-container">
-                <input  #picker type="color" (change)="onColorPicker($event.target.value)" [value]="getHex()"/>
+                <input  #picker type="color" (change)="onColorPicker($event.target.value)" [value]="getHEX()"/>
                 <div id="sample-view" [ngStyle]="{'background-color': getStyle(1)}"></div>
             </div>
             <save-input id="container-save" [inputValid]="inputValid" (addValueEmitter)="addColor()"></save-input>
@@ -36,7 +36,7 @@ export class HexRgbExt extends HexRgbBox implements OnInit{
         super(messageService, router);
     }
     addColor():void{
-        let values = {input:this.customHEX, output: this.customRGB};
+        let values = {input: this.customHEX, output: this.customRGB};
         this.recordService.recordValue(values, this.convertorId);
     }
     deleteConvertor():void{

@@ -14,18 +14,15 @@ import './bin-dec.convertor.css';
         <div class="convertor bin">
             <a class="convertor-remove" (click)="deleteConvertor()"></a>
             <h1> Decimal to Binary Converter</h1>
-            <div >
-                <span class="inputError" *ngIf="!inputValid">{{ error }}</span>
-                <div id="container-input">
-                    <label>Decimal:</label>
-                    <input maxlength="16" #box (keyup)="onKeyListener(box.value)" placeholder="Example: 128">
-                </div>
-            </div>
+            <input-in (inputInEmitter)="onKey($event)" [results]="results" [meta]="metaInData"></input-in>
             <input-out [result]="displayValue()" [labelText]="labelText"></input-out>
             <a  *ngIf="router.url === '/' || router.url === '/number-convertors'" [routerLink]="['/number-convertors', 'decimal-binary-convertor']" (click)="deleteConvertors()"  >Extend convertor<i class="right-arrow"></i></a>
         </div>`
 })
 export class DecBinBox implements ConvertorBase{
+    public metaInData: any = {labelText: "Decimal", length: "16", holder: "Example: 128"};
+    public results: any = {valid: ()=> this.inputValid, error: ()=> this.error, color: ()=> null};
+
     public labelText: string = "Binary";
     public binaryValue: string = '';
     public decimalValue: string = '';
@@ -41,7 +38,7 @@ export class DecBinBox implements ConvertorBase{
     deleteConvertors():void{
         this.messageService.sendMessage("removeAll");
     }
-    onKeyListener(input: string) : void {
+    onKey(input: string) : void {
         if(input.length){
             if(this.isInputValid(input)){
                 this.error = "";
@@ -53,6 +50,7 @@ export class DecBinBox implements ConvertorBase{
             }
         } else {
             this.binaryValue = "";
+            this.error = this.getError("length");
         }
         console.log(input);
     }

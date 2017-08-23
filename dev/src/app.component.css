@@ -1,6 +1,7 @@
 h1{
     font-size: 14px;
     color: #A9A9A9;
+    margin: 5px 0;
 }
 h1, span, label, input, a{
     font-family: 'Inconsolata','Helvetica', 'Arial', 'Sans-Serif', 'serif';
@@ -20,7 +21,7 @@ h1, span, label, input, a{
 .convertor{
     position: relative;
     margin: 5px;
-    display: flex;
+    display: inline-flex;
     flex-flow: column wrap;
     padding:15px;
     border-radius: 5px;

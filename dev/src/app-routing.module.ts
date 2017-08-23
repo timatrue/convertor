@@ -15,7 +15,7 @@ const appRoutes: Routes = [
     {
         path: 'color-convertors',
         component: ColorConvertors,
-        data: {alias: "colors", list: ["hexRgb"]}
+        data: {alias: "colors", list: ["hexRgb","rgbHex"]}
     },
     {
         path: 'color-convertors',

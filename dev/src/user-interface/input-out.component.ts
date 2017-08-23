@@ -2,7 +2,7 @@
  * Created by artem on 26/07/2017.
  */
 import {Component, Input, Output} from "@angular/core";
-import './input-out.css'
+import './input-out.component.css'
 @Component({
     selector: 'input-out',
     template:`

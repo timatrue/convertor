@@ -17,7 +17,7 @@ import {ConvertorBase} from "../../convertor-interface";
             <input-in (inputInEmitter)="onKey($event)"  [results]="results" [meta]="metaInData"></input-in>
             <input-out [result]="displayValue()" [labelText]="labelOutText"></input-out>
             <div id="color-container">
-                <input  #picker type="color" (change)="onColorPicker($event.target.value)" [value]="getHex()"/>
+                <input  #picker type="color" (change)="onColorPicker($event.target.value)" [value]="getHEX()"/>
                 <div id="sample-view" [ngStyle]="{'background-color': getStyle(1)}"></div>
             </div>
                 <a
@@ -29,9 +29,10 @@ import {ConvertorBase} from "../../convertor-interface";
 export class HexRgbBox implements ConvertorBase{
     public labelOutText: string = "RGBA";
     public metaInData: any = {labelText: "HEX", length: "7", holder: "Example: #722FAF"};
-    public results: any = {valid: ()=> this.inputValid, error: ()=> this.values, color: ()=> this.colorPickerVal};
+    public results: any = {valid: ()=> this.inputValid, error: ()=> this.error, color: ()=> this.colorPickerVal};
 
     values = '';
+    public error: string = '';
     colorPickerVal: string = "";
     inputValid: boolean = false;
     wrap: string = "rgba";
@@ -47,7 +48,7 @@ export class HexRgbBox implements ConvertorBase{
         this.colorPickerVal = color;
         this.onKey(this.colorPickerVal);
     }
-    getHex():string{
+    getHEX():string{
         return this.inputValid ? this.customHEX : this.customDefault;
     }
     deleteConvertor():void{
@@ -60,19 +61,20 @@ export class HexRgbBox implements ConvertorBase{
         console.log(value);
         let length = value.length;
         if(value.charAt(0) === "#"){
-            if(length < 4 || length === 5 || length === 6) this.values = this.getError("length");
+            if(length < 4 || length === 5 || length === 6) this.error = this.getError("length");
             else if (length === 4 || length > 6) {
                 if(this.isHexValid(value)) {
                     this.values = this.hex2rgb(value);
                     this.inputValid = true;
+                    this.error = "";
                 }
                 else {
                     this.inputValid = false;
-                    this.values = this.getError("range");
+                    this.error = this.getError("range");
                 }
             }
         } else{
-            this.values = length > 0 ? this.getError("format") : "";
+            this.error = length > 0 ? this.getError("format") : "";
         }
     }
     hex2rgb(hex) {
@@ -104,13 +106,13 @@ export class HexRgbBox implements ConvertorBase{
         let error = "";
         switch(id){
             case "length":
-                error = "HEX color should contain either 3 or 6 hex values";
+                error = "Format: #fff / #ffffff";
                 break;
             case "range":
-                error = "HEX color contains values out of range a - f";
+                error = "Values' range: a - f";
                 break;
             case "format":
-                error = "HEX color should begin with #";
+                error = "HEX color starts with #";
                 break;
         }
         return error;
