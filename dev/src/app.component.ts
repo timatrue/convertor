@@ -52,7 +52,7 @@ export class AppComponent implements OnInit, OnDestroy{
                 }
             })
     }
-    onRouteChanged(){
+    onRouteChanged():void{
         this.router.events
             .subscribe((event) => {
                 // example: NavigationStart, RoutesRecognized, NavigationEnd
@@ -62,19 +62,19 @@ export class AppComponent implements OnInit, OnDestroy{
                 }
             });
     }
-    removeChild(message){
+    removeChild(message):void{
         console.log(message.id);
         let component = this.idMap.get(message.id);
         let indice = this.target.indexOf(component);
         this.target.remove(indice);
         this.idMap.delete(message.id);
     }
-    removeAll(){
+    removeAll():void{
         this.target.clear();
         this.idMap.clear();
         this.index = 0;
     }
-    onConvertor(event: string){
+    onConvertor(event: string):void{
         let convertor = this.convertorService.getService(event);
         const factory = this.componentFactoryResolver.resolveComponentFactory(convertor);
         let componentRef = this.target.createComponent(factory);
@@ -85,17 +85,17 @@ export class AppComponent implements OnInit, OnDestroy{
         this.componentRef = componentRef;
         this.index += 1;
     }
-    ngOnInit(){
+    ngOnInit():void{
         this.onRouteChanged();
     }
-    ngOnDestroy() {
+    ngOnDestroy():void{
         console.log("ngOnDestroy",this.target);
         this.subscription.unsubscribe();
     }
-    getService(component: string){
+    getService(component: string):Component{
         return this.convertorService.getService(component);
     }
-    getCurrentUrl(): string {
+    getCurrentUrl():string {
         return this.router.url;
     }
 }

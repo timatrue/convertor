@@ -7,7 +7,7 @@ import './input-out.component.css'
     selector: 'input-out',
     template:`
         <div id="container-output">
-            <label> {{ labelText }}:</label>
+            <label> {{ labelText }}: </label>
             <input [value]="convertedValue" [readonly]="true">
         </div>
     `

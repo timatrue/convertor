@@ -15,34 +15,34 @@ import {Router} from "@angular/router";
             <input-out [result]="displayValue()" [labelText]="labelOutText"></input-out>
             <div id="color-container">
                 <input  #picker type="color" (change)="onColorPicker($event.target.value)" [value]="getRGB()"/>
-                <div id="sample-view" [ngStyle]="{'background-color': getRGB(1)}"></div>
+                <div id="sample-view" [ngStyle]="{'background-color': getRGB()}"></div>
             </div>
-            <!--<a
+            <a
                     [routerLink]="['/color-convertors', 'rgb-hex-convertor']"
                     (click)="deleteConvertors()"
                     *ngIf="router.url === '/' || router.url === '/color-convertors'" >Extend convertor<i class="right-arrow"></i>
-            </a>-->
+            </a>
         </div>
     `
 })
 export class RgbHexBox implements ConvertorBase{
-    public labelOutText: string = "HEX";
+    protected labelOutText: string = "HEX";
     //public pattern = /^(rgb|rgba)\((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5]),(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5]),(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5]),(0\.[0-9]{1,5}|1|0)\)$/i;
-    public pattern = /^rgba\((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5]),(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5]),(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5]),(0\.[0-9]{1,5}|1|0)\)$/i;
-    public metaInData: any = {labelText: "RGBA", length: "30", holder: "Example: RGBA(0,128,255,1)"};
-    public results: any = {valid: ()=> this.inputValid, error: ()=> this.error, color: ()=> this.customRGB};
+    protected pattern = /^rgba\((1?[0-9]{1,2}|2[0-4][0-9]|25[0-5]),(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5]),(1?[0-9]{1,2}|2[0-4][0-9]|25[0-5]),(0\.[0-9]{1,5}|1|0)\)$/i;
+    protected metaInData: any = {labelText: "RGBA", length: "30", holder: "Example: RGBA(0,128,255,1)"};
+    protected results: any = {valid: ()=> this.inputValid, error: ()=> this.error, color: ()=> this.customRGB};
 
-    public error: string = '';
-    public customRGB: string = '';
-    public customHEX: string = '';
-    public defaultHEX: string = "#ffffff";
-    values = '';
-    inputValid: boolean = false;
-    componentId: string;
+    protected error: string = '';
+    protected customRGB: string = '';
+    protected customHEX: string = '';
+    protected defaultHEX: string = "#ffffff";
+    protected values: string = '';
+    protected inputValid: boolean = false;
+    protected componentId: string;
 
     constructor(public messageService: MessageService, private router: Router){}
 
-    onColorPicker(color:string){
+    onColorPicker(color:string):void{
         console.log(color);
         this.customHEX = color;
         this.inputValid = true;
@@ -51,11 +51,10 @@ export class RgbHexBox implements ConvertorBase{
     getRGB():string{
         return this.inputValid ? this.customHEX : this.defaultHEX;
     }
-    hexToRgb(value: string){
+    hexToRgb(value: string):string{
         return "rgba(" + value.match(/[A-Za-z0-9]{2}/g).map(function(v) { return parseInt(v, 16) }).join(",") + ",1)";
     }
-
-    onKey(value: string) {
+    onKey(value: string):void{
         let patternValid = this.pattern.test(value);
         console.log('onKey',value.length);
         if(patternValid){
@@ -75,12 +74,11 @@ export class RgbHexBox implements ConvertorBase{
          else {
             this.error =  value.length ?  this.getError().format : '' ;
         }
-
     }
-    displayValue(){
+    displayValue():string{
         return  this.inputValid ? this.customHEX : '';
     }
-    getError() {
+    getError():any{
         this.inputValid = false;
         return { format: "Format: RGBA(0,128,255,1)"};
     }

@@ -7,7 +7,7 @@ import './input-in.component.css'
         <div >
             <div class="container-error"><span class="input-error" >{{ results.error() }}</span></div>
             <div id="container-input">
-                <label>{{metaIn.labelText}}:</label>
+                <label>{{metaIn.labelText}}: </label>
                 <input  [attr.maxlength]="metaIn.length" #box (keyup)="onKeyListener(box.value)" [value]="results.color()" placeholder="{{metaIn.holder}}">
             </div>
         </div>

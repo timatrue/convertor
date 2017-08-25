@@ -8,6 +8,9 @@
 .convertor-list button, input{
     font-size: 14px;
 }
+.convertor-list select{
+    padding: 0 5px;
+}
 .convertor-list button{
     background-color: #E74C3C;
     border: none;

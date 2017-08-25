@@ -5,6 +5,7 @@ import {ColorConvertors} from "./color-convertors/color-convertors.component";
 import {BinDecExt} from "./number-convertors/bin-dec/bin-dec-ext/bin-dec-ext";
 import {NumberConvertors} from "./number-convertors/number-convertors.component";
 import {DecBinExt} from "./number-convertors/bin-dec/bin-dec-ext/dec-bin-ext";
+import {RgbHexExt} from "./color-convertors/rgb-hex/rgb-hex-ext/rgb-hex-ext.component";
 
 
 /**
@@ -24,6 +25,11 @@ const appRoutes: Routes = [
                 path: 'hex-rgb-convertor',
                 component: HexRgbExt,
                 data: {alias: "hexRgbExt"}
+            },
+            {
+                path: 'rgb-hex-convertor',
+                component: RgbHexExt,
+                data: {alias: "rgbHexExt"}
             }
         ]
 

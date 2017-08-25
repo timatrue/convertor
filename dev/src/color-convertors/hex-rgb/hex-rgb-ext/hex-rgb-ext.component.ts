@@ -25,7 +25,7 @@ import '../hex-rgb.component.css';
     `
 })
 export class HexRgbExt extends HexRgbBox implements OnInit{
-
+    /*convertorId is used in the component RecordColors(shared storage for colors)*/
     private convertorId: string;
     constructor(messageService: MessageService,
                 router: Router,
@@ -45,7 +45,7 @@ export class HexRgbExt extends HexRgbBox implements OnInit{
     initParent():void{
         this.messageService.sendMessage("initAll");
     }
-    ngOnInit(){
+    ngOnInit():void{
         this.activatedRoute.data.subscribe(data => this.convertorId = data.alias)
     }
 }

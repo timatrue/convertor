@@ -17,6 +17,8 @@ nav a:hover:not(.active-link) {
     background-color: #ddd;
 }
 .router-link{
+    min-width: 165px;
+    text-align: center;
 }
 .active-link {
     color: white;

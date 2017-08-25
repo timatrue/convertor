@@ -27,23 +27,22 @@ import {ConvertorBase} from "../../convertor-interface";
         </div>`
 })
 export class HexRgbBox implements ConvertorBase{
-    public labelOutText: string = "RGBA";
-    public metaInData: any = {labelText: "HEX", length: "7", holder: "Example: #722FAF"};
-    public results: any = {valid: ()=> this.inputValid, error: ()=> this.error, color: ()=> this.colorPickerVal};
+    protected labelOutText: string = "RGBA";
+    protected metaInData: any = {labelText: "HEX", length: "7", holder: "Example: #722FAF"};
+    protected results: any = {valid: ()=> this.inputValid, error: ()=> this.error, color: ()=> this.colorPickerVal};
 
-    values = '';
-    public error: string = '';
-    colorPickerVal: string = "";
-    inputValid: boolean = false;
-    wrap: string = "rgba";
-    customRGB: string = "rgba(0,0,255,1)";
-    customHEX: string = "#ffffff";
-    customDefault: string = "#ffffff";
-    componentId: string;
+    protected values: string = '';
+    protected error: string = '';
+    protected colorPickerVal: string = "";
+    protected inputValid: boolean = false;
+    protected wrap: string = "rgba";
+    protected customRGB: string = "rgba(0,0,255,1)";
+    protected customHEX: string = "#ffffff";
+    protected customDefault: string = "#ffffff";
+    protected componentId: string;
     constructor(public messageService: MessageService, private router: Router) { }
 
-
-    onColorPicker(color:string){
+    onColorPicker(color:string):void{
         console.log(color);
         this.colorPickerVal = color;
         this.onKey(this.colorPickerVal);
@@ -57,7 +56,7 @@ export class HexRgbBox implements ConvertorBase{
     deleteConvertors():void{
         this.messageService.sendMessage("removeAll");
     }
-    onKey(value: string) {
+    onKey(value: string):void{
         console.log(value);
         let length = value.length;
         if(value.charAt(0) === "#"){
@@ -77,7 +76,7 @@ export class HexRgbBox implements ConvertorBase{
             this.error = length > 0 ? this.getError("format") : "";
         }
     }
-    hex2rgb(hex) {
+    hex2rgb(hex):string{
         if(hex.length > 4){
             var m = hex.match(/^#?([\da-f]{2})([\da-f]{2})([\da-f]{2})$/i);
 
@@ -98,10 +97,10 @@ export class HexRgbBox implements ConvertorBase{
         this.customHEX = "#" + m[1] + m[2] + m[3];
         return converted;
     }
-    isHexValid(hex){
+    isHexValid(hex):boolean{
         return hex.slice(1).match(/[^\da-f]/i) === null;
     }
-    getError(id) {
+    getError(id):string{
         this.inputValid = false;
         let error = "";
         switch(id){
@@ -117,21 +116,13 @@ export class HexRgbBox implements ConvertorBase{
         }
         return error;
     }
-    getStyle(opacity: number){
+    getStyle(opacity: number):string{
         return  this.inputValid ? this.changeOpacity(this.customRGB, opacity): "rgba(255,255,255,1)";
     }
-    changeOpacity(color:string,opacity:number){
+    changeOpacity(color:string,opacity:number):string{
         return color.replace( "1)",opacity + ")" );
     }
-    displayValue(){
+    displayValue():string{
         return this.inputValid ? this.values : "";
-    }
-
-    rgb2hex(rgb){
-        rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
-        return (rgb && rgb.length === 4) ? "#" +
-            ("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
-            ("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
-            ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : '';
     }
 }
