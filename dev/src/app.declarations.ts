@@ -17,6 +17,8 @@ import {RecordColors} from "./color-convertors/records/record-colors.component";
 import {InputOut} from "./user-interface/input-out.component";
 import {InputIn} from "./user-interface/input-in.component";
 import {RgbHexExt} from "./color-convertors/rgb-hex/rgb-hex-ext/rgb-hex-ext.component";
+import {HexDecBox} from "./number-convertors/bin-dec/hex-dec.convertor";
+import {HexDecExt} from "./number-convertors/bin-dec/bin-dec-ext/hex-dec-ext";
 
 
 
@@ -24,7 +26,7 @@ import {RgbHexExt} from "./color-convertors/rgb-hex/rgb-hex-ext/rgb-hex-ext.comp
  * Created by artem on 23/05/2017.
  */
 const parents = [AppComponent, ColorConvertors, NumberConvertors];
-const numbers = [BinDecBox, BinDecExt, DecBinBox, DecBinExt, RecordNumbers];
+const numbers = [BinDecBox, BinDecExt, DecBinBox, DecBinExt, HexDecBox, HexDecExt, RecordNumbers];
 const colors = [HexRgbBox, HexRgbExt, RgbHexBox, RgbHexExt, RecordColors];
 const ui = [ConvertorList, NavigationBar, DynamicBackground, SaveInput, InputOut, InputIn];
 

@@ -23,15 +23,15 @@ import './bin-dec.convertor.css';
         </div>`
 })
 export class BinDecBox implements ConvertorBase{
-    public metaInData: any = {labelText: "Binary", length: "16", holder: "Example: 10101"};
-    public results: any = {valid: ()=> this.inputValid, error: ()=> this.error, color: ()=> null};
+    protected labelText: string = "Decimal";
+    protected metaInData: any = {labelText: "Binary", length: "16", holder: "Example: 10101"};
+    protected results: any = {valid: ()=> this.inputValid, error: ()=> this.error, color: ()=> null};
 
-    public labelText: string = "Decimal";
-    public decimalValue: string = '';
-    public binaryValue: string = '';
-    public inputValid: boolean = false;
-    private error: string = '';
-    private componentId: string;
+    protected decimalValue: string = '';
+    protected binaryValue: string = '';
+    protected inputValid: boolean = false;
+    protected error: string = '';
+    protected componentId: string;
 
     constructor(public messageService: MessageService, private router: Router){}
 

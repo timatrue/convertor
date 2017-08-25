@@ -13,6 +13,7 @@ import {MessageService} from "./message-service/message.service";
 
 import {RecordNumbersService} from "./number-convertors/records/record-numbers.service";
 import {RecordColorsService} from "./color-convertors/records/record-colors.service";
+import {HexDecBox} from "./number-convertors/bin-dec/hex-dec.convertor";
 
 
 
@@ -20,7 +21,7 @@ import {RecordColorsService} from "./color-convertors/records/record-colors.serv
 @NgModule({
     imports:[BrowserModule, appRoutingModule],
 	declarations: DECLARATIONS,
-    entryComponents: [HexRgbBox, BinDecBox, DecBinBox, RgbHexBox],
+    entryComponents: [HexRgbBox, RgbHexBox, BinDecBox, DecBinBox, HexDecBox],
     providers: [{provide: APP_BASE_HREF, useValue: '/'},
         ConvertorService, MessageService, RecordNumbersService, RecordColorsService],
     bootstrap:[AppComponent]

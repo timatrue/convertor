@@ -12,18 +12,9 @@
     border-radius: 5px;
     box-shadow: 0 2px 3px lightgrey;
     color: white;
-    background-color: #3498DB;
+    background-color: #5cace2;
 }
-.save-result:after{
-    content: '✖'; /* UTF-8 symbol */
-    position: relative;
-    display: inline-block;
-    font-weight: bold;
-    color: white;
-    margin-left: 5px;
-    transform: rotate(45deg);
-}
+
 .save-result:hover {
-    transform: scale(1.01);
-    background-color: #2980B9 !important;
+    background-color: #3498db !important;
 }

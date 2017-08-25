@@ -6,6 +6,7 @@ import {BinDecExt} from "./number-convertors/bin-dec/bin-dec-ext/bin-dec-ext";
 import {NumberConvertors} from "./number-convertors/number-convertors.component";
 import {DecBinExt} from "./number-convertors/bin-dec/bin-dec-ext/dec-bin-ext";
 import {RgbHexExt} from "./color-convertors/rgb-hex/rgb-hex-ext/rgb-hex-ext.component";
+import {HexDecExt} from "./number-convertors/bin-dec/bin-dec-ext/hex-dec-ext";
 
 
 /**
@@ -37,7 +38,7 @@ const appRoutes: Routes = [
     {
         path: 'number-convertors',
         component: NumberConvertors,
-        data: {alias: "numbers", list: ["binDec","decBin"]},
+        data: {alias: "numbers", list: ["binDec","decBin","hexDec"]},
     },
     {
         path: 'number-convertors',
@@ -51,6 +52,11 @@ const appRoutes: Routes = [
                 path: 'decimal-binary-convertor',
                 component: DecBinExt,
                 data: {alias: "decBinExt"}
+            },
+            {
+                path: 'hexadecimal-decimal-convertor',
+                component: HexDecExt,
+                data: {alias: "hexDecExt"}
             }
         ]
     }

@@ -22,9 +22,9 @@ nav a:hover:not(.active-link) {
 }
 .active-link {
     color: white;
-    background-color: #3498DB;
+    background-color: #5cace2;
 }
 .active-link:hover {
     color: white;
-    background-color: #2980B9;
+    background-color: #3498db;
 }
