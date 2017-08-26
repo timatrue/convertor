@@ -1,7 +1,7 @@
 /**
  * Created by artem on 21/05/2017.
  */
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MessageService} from "../../message-service/message.service";
 import {Router} from "@angular/router";
 import {ConvertorBase} from "../../convertor-interface";
@@ -14,21 +14,31 @@ import './bin-dec.convertor.css';
         <div class="convertor bin">
             <a class="convertor-remove" (click)="deleteConvertor()"></a>
             <h1> Binary to Decimal Converter</h1>
-            <input-in (inputInEmitter)="onKey($event)" [results]="results" [meta]="metaInData"></input-in>
-            <input-out [result]="displayValue()" [labelText]="labelText"></input-out>
+            <input-in (inputInEmitter)="onKey($event)" [results]="results" [meta]="metaIn"></input-in>
+            <input-out [result]="converted.dec" [labelText]="metaOut.dec"></input-out>
+            <input-out [result]="converted.hex" [labelText]="metaOut.hex"></input-out>
             <a [routerLink]="['/number-convertors', 'binary-decimal-convertor']" 
                *ngIf="router.url === '/' || router.url === '/number-convertors'" 
                (click)="deleteConvertors()"  >Extend convertor<i class="right-arrow"></i>
             </a>
         </div>`
 })
-export class BinDecBox implements ConvertorBase{
-    protected labelText: string = "Decimal";
-    protected metaInData: any = {labelText: "Binary", length: "16", holder: "Example: 10101"};
+export class BinDecBox implements ConvertorBase, OnInit{
+    protected metaOut: any = {dec: 'Decimal', hex: 'Hexadecimal' };
+    protected metaIn: any = {labelText: "Binary", length: "16", holder: "Example: 10101"};
     protected results: any = {valid: ()=> this.inputValid, error: ()=> this.error, color: ()=> null};
 
-    protected decimalValue: string = '';
-    protected binaryValue: string = '';
+    protected utility: any = {
+        clear: function(){
+            for (let key in this) {
+                if(this.hasOwnProperty(key)) this[key] = '';
+            }
+        },
+        getValues: function(){
+            return this;
+        }
+    };
+    protected converted: any = {bin: '', dec: '', hex: ''};
     protected inputValid: boolean = false;
     protected error: string = '';
     protected componentId: string;
@@ -47,22 +57,24 @@ export class BinDecBox implements ConvertorBase{
             if(this.isInputValid(input)){
                 this.error = "";
                 this.inputValid = true;
-                this.decimalValue = String(parseInt(input, 2));
-                this.binaryValue = String(input);
+                this.converted.bin = String(input);
+                this.converted.dec = String(parseInt(input, 2));
+                this.converted.hex = parseInt(input , 2).toString(16).toUpperCase();
+
             } else {
+                this.converted.clear();
                 this.error = this.getError("format");
             }
         } else {
-            this.decimalValue = "";
+            this.converted.clear();
             this.error = length > 0 ? this.getError("format") : "";
         }
-        console.log(input);
     }
     isInputValid(input: string) : boolean {
         return input.match(/([a-z])|([^0-1])/i) === null;
     }
     displayValue() : string {
-        return this.inputValid ? this.decimalValue : "";
+        return this.inputValid ? this.converted : "";
     }
     getError(id) : string {
         this.inputValid = false;
@@ -80,6 +92,10 @@ export class BinDecBox implements ConvertorBase{
         }
         return error;
     }
+    setProto(){
+        this.converted.__proto__ = this.utility;
+    }
+    ngOnInit(){
+        this.setProto();
+    }
 }
-
-//<a  *ngIf="router.url === '/' || router.url === '/number-convertors'" [routerLink]="['/number-convertors', 'binary-decimal-convertor']" (click)="deleteConvertors()"  >Extend convertor<i class="right-arrow"></i></a>

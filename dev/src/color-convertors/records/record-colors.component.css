@@ -17,7 +17,7 @@
 }
 .record-value{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
 }
 .record-value span{
     margin: 0 5px;

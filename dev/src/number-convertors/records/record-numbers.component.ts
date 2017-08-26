@@ -12,8 +12,7 @@ import "./record-numbers.component.css";
         <div class="records-list">
             <div class="container-record" *ngFor="let item of records[componentId]; let i = index">
                 <div class="record-value">
-                    <span>Input: {{ item.input }}</span>
-                    <span>Output: {{ item.output }}</span>
+                    <span *ngFor="let instance of item.list">{{ instance.name}}: {{ instance.value}}</span>
                 </div>
                 <a class="record-remove" (click)="removeRecord(index)"></a>
             </div>
