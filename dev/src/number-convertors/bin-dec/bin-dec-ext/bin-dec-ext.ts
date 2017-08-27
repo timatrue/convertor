@@ -6,6 +6,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 import {BinDecBox} from "../bin-dec.convertor";
 import {MessageService} from "../../../message-service/message.service";
 import {RecordNumbersService} from "../../records/record-numbers.service";
+import {Utility} from "../../../utilility";
 
 @Component({
     selector:"bin-dec-ext",
@@ -37,7 +38,7 @@ export class BinDecExt extends BinDecBox{
         this.messageService.sendMessage("initAll");
     }
     ngOnInit(){
-        this.converted.__proto__ = this.utility;
+        this.converted.__proto__ = Utility.inputFields;
         this.activatedRoute.data.subscribe(data => this.convertorId = data.alias)
     }
 }

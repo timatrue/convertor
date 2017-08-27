@@ -15,8 +15,7 @@ export class RecordNumbersService{
     }
     recordMultipleValue(values, componentId: string){
         this.records[componentId] = this.records[componentId] || [];
-        this.records[componentId].push(new RecordMultipleNumber(values))
-
+        this.records[componentId].push(new RecordMultipleNumber(values));
     }
     removeValue(index:number, componentId: string){
         this.records[componentId].splice(index,1);

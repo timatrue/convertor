@@ -1,11 +1,14 @@
 #container-input{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-bottom: 10px;
 }
 #container-input input{
     width: 185px;
+}
+#container-input label{
+    margin-right: 5px;
 }
 .container-error{
     height: 20px;

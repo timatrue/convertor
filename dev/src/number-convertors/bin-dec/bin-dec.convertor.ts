@@ -6,6 +6,7 @@ import {MessageService} from "../../message-service/message.service";
 import {Router} from "@angular/router";
 import {ConvertorBase} from "../../convertor-interface";
 import './bin-dec.convertor.css';
+import {Utility} from "../../utilility";
 
 @Component({
     selector: 'bin-dec-box',
@@ -28,16 +29,6 @@ export class BinDecBox implements ConvertorBase, OnInit{
     protected metaIn: any = {labelText: "Binary", length: "16", holder: "Example: 10101"};
     protected results: any = {valid: ()=> this.inputValid, error: ()=> this.error, color: ()=> null};
 
-    protected utility: any = {
-        clear: function(){
-            for (let key in this) {
-                if(this.hasOwnProperty(key)) this[key] = '';
-            }
-        },
-        getValues: function(){
-            return this;
-        }
-    };
     protected converted: any = {bin: '', dec: '', hex: ''};
     protected inputValid: boolean = false;
     protected error: string = '';
@@ -93,7 +84,7 @@ export class BinDecBox implements ConvertorBase, OnInit{
         return error;
     }
     setProto(){
-        this.converted.__proto__ = this.utility;
+        this.converted.__proto__ = Utility.inputFields;
     }
     ngOnInit(){
         this.setProto();
