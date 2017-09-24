@@ -2,14 +2,171 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0f881c4-b50e-47e3-a66d-0787813ecb4c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/bin-dec-ext.ts" afterPath="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/bin-dec-ext.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/dec-bin-ext.ts" afterPath="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/dec-bin-ext.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec.convertor.ts" afterPath="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec.convertor.ts" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/.gitignore_20170513142606" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/.gitignore_20170513144908" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/.gitignore_20170513144915" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/.travis_20170513142530.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/CHANGELOG_20170424191735.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/CHANGELOG_20170517113221.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/CHANGELOG_20170517113321.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/README_20170513163312.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/index.d_20170513010248.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/index.d_20170513010322.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/lib/timespan_20170513162630.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/lib/timespan_20170513162744.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/package_20170513122214.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/package_20170513122244.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/package_20170513142409.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/package_20170513142453.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/package_20170513142659.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/package_20170513144757.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513143941.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513145829.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513154325.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513155354.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513155439.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513155454.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513160038.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513160219.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513160322.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513160425.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513163356.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513163601.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513163715.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513163904.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513164126.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513164226.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513164631.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513164846.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513165123.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513165254.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513165528.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513165610.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513165649.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513165838.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513165848.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513165930.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513170022.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513170217.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513170326.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513170345.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513170401.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513170437.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513170504.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513170522.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513170741.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513170816.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513171243.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513171418.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513171450.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513171456.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513171617.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513171931.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513172028.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513172038.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513172123.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513172506.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513172519.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170513172637.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170516110727.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170516110926.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170516111003.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170516111045.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170516111149.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170516111224.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170516111501.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170516111544.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170516111615.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/verify.tests_20170516111736.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170513141638.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170513141721.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170513141900.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170513160544.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170513161150.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170513161232.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170513161617.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170513162315.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170513162823.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170513162938.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170513163049.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170513163058.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170513164052.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170513172602.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170513172907.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170516110653.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170516110827.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170516111751.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_20170516111805.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.html" afterPath="$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.ts" afterPath="$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/src/convertors-service/convertors.list.ts" afterPath="$PROJECT_DIR$/dev/src/convertors-service/convertors.list.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/dec-bin.convertor.ts" afterPath="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/dec-bin.convertor.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/src/number-convertors/records/record-numbers.service.ts" afterPath="$PROJECT_DIR$/dev/src/number-convertors/records/record-numbers.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/src/user-interface/input-in.component.css" afterPath="$PROJECT_DIR$/dev/src/user-interface/input-in.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/sign_2017011304458.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/sign_2017011304458.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/sign_2017011304615.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/sign_2017011304615.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/sign_20170216133031.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/sign_20170216133031.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/sign_20170308134619.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/sign_20170308134619.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/sign_20170308134646.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/sign_20170308134646.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/sign_20170308140651.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/sign_20170308140651.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/async_sign.tests_20170308134859.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/async_sign.tests_20170308134859.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/async_sign.tests_20170308135641.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/async_sign.tests_20170308135641.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/issue_196.tests_20170206184753.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/issue_196.tests_20170206184753.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/issue_70.tests_20170321165837.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/issue_70.tests_20170321165837.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/issue_70.tests_20170321165848.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/issue_70.tests_20170321165848.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/jwt.hs.tests_20170308135416.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/jwt.hs.tests_20170308135416.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/jwt.hs.tests_20170308135605.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/jwt.hs.tests_20170308135605.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/jwt.hs.tests_20170308135831.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/jwt.hs.tests_20170308135831.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/jwt.hs.tests_20170308140535.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/jwt.hs.tests_20170308140535.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/jwt.hs.tests_20170308140747.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/test/jwt.hs.tests_20170308140747.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_2017011304950.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_2017011304950.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_2017011305133.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_2017011305133.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_2017011305435.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.history/verify_2017011305435.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.jshintrc" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.jshintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.npmignore" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/LICENSE" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/README.md" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/bin/changelog" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/bin/changelog" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/decode.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/decode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/index.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/lib/JsonWebTokenError.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/lib/JsonWebTokenError.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/lib/NotBeforeError.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/lib/NotBeforeError.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/lib/TokenExpiredError.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/lib/TokenExpiredError.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/lib/timespan.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/lib/timespan.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/package.json" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/sign.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/sign.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/async_sign.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/async_sign.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/buffer.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/buffer.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/encoding.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/encoding.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/expires_format.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/expires_format.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/iat.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/iat.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/invalid_exp.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/invalid_exp.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/invalid_pub.pem" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/invalid_pub.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/issue_147.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/issue_147.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/issue_196.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/issue_196.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/issue_304.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/issue_304.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/issue_70.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/issue_70.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/jwt.hs.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/jwt.hs.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/jwt.rs.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/jwt.rs.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/keyid.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/keyid.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/noTimestamp.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/noTimestamp.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/non_object_values.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/non_object_values.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/priv.pem" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/priv.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/pub.pem" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/pub.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/rsa-private.pem" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/rsa-private.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/rsa-public-key.pem" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/rsa-public-key.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/rsa-public-key.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/rsa-public-key.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/rsa-public.pem" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/rsa-public.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/set_headers.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/set_headers.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/undefined_secretOrPublickey.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/undefined_secretOrPublickey.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/util/fakeDate.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/util/fakeDate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/verify.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/verify.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/wrong_alg.tests.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/test/wrong_alg.tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/verify.js" afterPath="$PROJECT_DIR$/node_modules/firebase/node_modules/jsonwebtoken/verify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/app.js" afterPath="$PROJECT_DIR$/public/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/polyfill.js" afterPath="$PROJECT_DIR$/public/app/polyfill.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,62 +180,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dec-bin.convertor.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/bin-dec/dec-bin.convertor.ts">
+      <file leaf-file-name="utilility.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/src/utilility.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="50" column="16" lean-forward="true" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="39" />
-              <folding>
-                <marker date="1503818712142" expanded="true" signature="439:1081" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hex-dec.convertor.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/bin-dec/hex-dec.convertor.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#43#91#0" expanded="true" />
-                <marker date="1503819822358" expanded="true" signature="435:1131" ph="..." />
-                <marker date="1503819822358" expanded="true" signature="927:1116" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="input-out.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/src/user-interface/input-out.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="272">
+              <caret line="16" column="84" lean-forward="false" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input-in.component.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dev/src/user-interface/input-in.component.css">
+      <file leaf-file-name="hex-rgb.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hex-dec-ext.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/hex-dec-ext.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+            <state relative-caret-position="153">
+              <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
               <folding>
                 <element signature="e#43#83#0" expanded="true" />
-                <marker date="1503819822324" expanded="true" signature="476:939" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hex-rgb.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,11 +297,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/dev/src/color-convertors/color-convertors.component.ts" />
-        <option value="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec.convertor.css" />
-        <option value="$PROJECT_DIR$/dev/src/number-convertors/memory/memory.service.ts" />
-        <option value="$PROJECT_DIR$/dev/src/number-convertors/memory/memory.component.ts" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/memory/memory.item.ts" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/memory/record.service.ts" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/memory/record.component.ts" />
@@ -160,14 +314,12 @@
         <option value="$PROJECT_DIR$/dev/src/user-interface/input-out.css" />
         <option value="$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.css" />
         <option value="$PROJECT_DIR$/dev/src/app.component.ts" />
-        <option value="$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.ts" />
         <option value="$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb-ext/hex-rgb-ext.component.ts" />
         <option value="$PROJECT_DIR$/dev/src/color-convertors/rgb-hex/rgb-hex-ext/rgb-hex-ext.component.ts" />
         <option value="$PROJECT_DIR$/dev/src/user-interface/input-out.component.ts" />
         <option value="$PROJECT_DIR$/dev/src/user-interface/input-in.component.ts" />
         <option value="$PROJECT_DIR$/dev/src/color-convertors/rgb-hex/rgb-hex.component.ts" />
         <option value="$PROJECT_DIR$/dev/src/user-interface/navigation.component.ts" />
-        <option value="$PROJECT_DIR$/dev/src/convertors-service/convertors.list.ts" />
         <option value="$PROJECT_DIR$/dev/src/app.module.ts" />
         <option value="$PROJECT_DIR$/dev/src/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/dev/src/app.declarations.ts" />
@@ -179,16 +331,23 @@
         <option value="$PROJECT_DIR$/dev/src/number-convertors/records/record-numbers.component.css" />
         <option value="$PROJECT_DIR$/dev/src/color-convertors/records/record-colors.component.css" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/records/record-numbers.item.ts" />
-        <option value="$PROJECT_DIR$/dev/src/utilility.ts" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec.convertor.ts" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/bin-dec-ext.ts" />
-        <option value="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/dec-bin.convertor.ts" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/dec-bin-ext.ts" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/records/record-numbers.service.ts" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/bin-dec-ext/hex-dec-ext.ts" />
         <option value="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/hex-dec.convertor.ts" />
-        <option value="$PROJECT_DIR$/dev/src/user-interface/input-out.component.css" />
         <option value="$PROJECT_DIR$/dev/src/user-interface/input-in.component.css" />
+        <option value="$PROJECT_DIR$/dev/src/user-interface/input-out.component.css" />
+        <option value="$PROJECT_DIR$/dev/src/user-interface/select.component.ts" />
+        <option value="$PROJECT_DIR$/dev/src/number-convertors/bin-dec/dec-bin.convertor.ts" />
+        <option value="$PROJECT_DIR$/dev/src/convertors-service/convertors.list.ts" />
+        <option value="$PROJECT_DIR$/dev/src/utilility.ts" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.html" />
+        <option value="$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.ts" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
       </list>
     </option>
   </component>
@@ -225,6 +384,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,51 +409,30 @@
               <item name="convertor" type="462c0819:PsiDirectoryNode" />
               <item name="dev" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="number-convertors" type="462c0819:PsiDirectoryNode" />
+              <item name="color-convertors" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="convertor" type="b2602c69:ProjectViewProjectNode" />
               <item name="convertor" type="462c0819:PsiDirectoryNode" />
               <item name="dev" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="number-convertors" type="462c0819:PsiDirectoryNode" />
-              <item name="bin-dec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="convertor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="convertor" type="462c0819:PsiDirectoryNode" />
-              <item name="dev" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="number-convertors" type="462c0819:PsiDirectoryNode" />
-              <item name="bin-dec" type="462c0819:PsiDirectoryNode" />
-              <item name="bin-dec-ext" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="convertor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="convertor" type="462c0819:PsiDirectoryNode" />
-              <item name="dev" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="number-convertors" type="462c0819:PsiDirectoryNode" />
-              <item name="records" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="convertor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="convertor" type="462c0819:PsiDirectoryNode" />
-              <item name="dev" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="user-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="color-convertors" type="462c0819:PsiDirectoryNode" />
+              <item name="hex-rgb" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="convertor" type="b2602c69:ProjectViewProjectNode" />
               <item name="convertor" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="convertor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="convertor" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -495,12 +635,14 @@
       <workItem from="1503299595790" duration="8312000" />
       <workItem from="1503470532260" duration="15864000" />
       <workItem from="1503642963534" duration="12840000" />
-      <workItem from="1503732229322" duration="25363000" />
+      <workItem from="1503732229322" duration="27426000" />
+      <workItem from="1504372966780" duration="4739000" />
+      <workItem from="1506274407861" duration="4534000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="373831000" />
+    <option name="totallyTimeSpent" value="385167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -509,8 +651,8 @@
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20364584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21449" sideWeight="0.5317708" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21449" sideWeight="0.46822917" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21449" sideWeight="0.5338542" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21449" sideWeight="0.46614584" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -551,9 +693,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/color-convertors.component.ts" />
-    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb-ext/color.directive.ts" />
-    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/records.ts" />
     <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/records/record-colors.item.ts" />
     <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/records/record-colors.service.ts" />
     <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb-ext/memory.css" />
@@ -565,27 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -611,11 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
           <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-          <folding>
-            <element signature="e#43#91#0" expanded="false" />
-            <marker date="1503660778864" expanded="true" signature="495:1123" ph="..." />
-            <marker date="1503660778864" expanded="true" signature="774:993" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -645,34 +758,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="65" lean-forward="true" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="68" />
-          <folding>
-            <element signature="e#43#83#0" expanded="false" />
-            <marker date="1503658855795" expanded="true" signature="390:1273" ph="..." />
-            <marker date="1503658855795" expanded="true" signature="742:964" ph="..." />
-            <marker date="1503658855795" expanded="true" signature="984:1258" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/user-interface/select.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dev/src/user-interface/navigation.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-          <folding>
-            <marker date="1503137915497" expanded="true" signature="264:672" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -680,23 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/convertors-service/convertors.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/convertors-service/convertors.list.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,7 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -750,7 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,9 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -790,12 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding>
-            <element signature="e#43#109#0" expanded="true" />
-            <marker date="1503137915461" expanded="true" signature="425:529" ph="..." />
-            <marker date="1503137915461" expanded="true" signature="562:689" ph="..." />
-            <marker date="1503137915461" expanded="true" signature="598:674" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -803,7 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -811,7 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -819,15 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/utilility.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -835,12 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="e#43#98#0" expanded="true" />
-            <marker date="1503768915175" expanded="true" signature="315:699" ph="..." />
-            <marker date="1503768915175" expanded="true" signature="415:684" ph="..." />
-            <marker date="1503768915175" expanded="true" signature="458:589" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -849,7 +893,7 @@
         <state relative-caret-position="438">
           <caret line="32" column="42" lean-forward="true" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
           <folding>
-            <element signature="e#43#91#0" expanded="true" />
+            <element signature="e#43#91#0" expanded="false" />
             <marker date="1503817087269" expanded="true" signature="439:1125" ph="..." />
             <marker date="1503817087269" expanded="true" signature="921:1110" ph="..." />
           </folding>
@@ -860,10 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
           <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-          <folding>
-            <element signature="e#43#83#0" expanded="true" />
-            <marker date="1503817087232" expanded="true" signature="480:938" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -871,7 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="17" column="73" lean-forward="false" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,7 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,19 +925,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="34" column="47" lean-forward="true" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="73" />
-          <folding>
-            <marker date="1503818712172" expanded="true" signature="485:943" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/bin-dec/dec-bin.convertor.ts">
+    <entry file="file://$PROJECT_DIR$/dev/src/user-interface/input-in.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="50" column="16" lean-forward="true" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="39" />
-          <folding>
-            <marker date="1503818712142" expanded="true" signature="439:1081" ph="..." />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -908,7 +940,7 @@
         <state relative-caret-position="527">
           <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
           <folding>
-            <element signature="e#43#83#0" expanded="true" />
+            <element signature="e#43#83#0" expanded="false" />
             <marker date="1503819822324" expanded="true" signature="476:939" ph="..." />
           </folding>
         </state>
@@ -917,10 +949,10 @@
     <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/bin-dec/hex-dec.convertor.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="593">
-          <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+          <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#91#0" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#43#91#0" expanded="false" />
             <marker date="1503819822358" expanded="true" signature="435:1131" ph="..." />
             <marker date="1503819822358" expanded="true" signature="927:1116" ph="..." />
           </folding>
@@ -929,16 +961,110 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dev/src/user-interface/input-out.component.css">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/number-convertors/bin-dec/dec-bin.convertor.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="22" column="95" lean-forward="false" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="95" />
+          <folding>
+            <marker date="1504376570257" expanded="true" signature="519:1421" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/convertors-service/convertors.list.ts">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/src/user-interface/input-in.component.css">
+    <entry file="file://$PROJECT_DIR$/dev/src/user-interface/select.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="255">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <marker date="1503134043875" expanded="true" signature="437:712" ph="..." />
+            <marker date="1503134043875" expanded="true" signature="468:610" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/convertors-service/convertors.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/utilility.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="84" lean-forward="false" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/src/color-convertors/hex-rgb/hex-rgb.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <folding>
+            <element signature="e#43#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
           <folding />
         </state>
       </provider>

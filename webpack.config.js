@@ -14,17 +14,21 @@ module.exports = {
 		    rules: [
 					{
 						test: /\.css$/,
-						use: [ 'style-loader', 'css-loader' ],
+						use: [ 'style-loader', 'css-loader' ]
 					},
 					{
 						test: /\.ts$/,
-						use: 'awesome-typescript-loader',
+						use: ['awesome-typescript-loader', 'angular2-template-loader?keepUrl=true'],
 						exclude: /node_modules/
-					}
+					},
+                    {
+                        test: /\.html$/,
+                        loader: 'raw-loader'
+                    }
 				]
     },
 	plugins: [new UglifyJSPlugin()],
     resolve: {
         extensions: [".js", ".ts", ".css"]
     }
-}
+};

@@ -9,22 +9,7 @@ import {ConvertorBase} from "../../convertor-interface";
 
 @Component({
     selector: 'hex-rgb-box',
-    template:
-            `
-        <div class="convertor hex">
-            <a class="convertor-remove" (click)="deleteConvertor()"></a>
-            <h1> HEX to RGB Converter</h1>
-            <input-in (inputInEmitter)="onKey($event)"  [results]="results" [meta]="metaInData"></input-in>
-            <input-out [result]="displayValue()" [labelText]="labelOutText"></input-out>
-            <div id="color-container">
-                <input  #picker type="color" (change)="onColorPicker($event.target.value)" [value]="getHEX()"/>
-                <div id="sample-view" [ngStyle]="{'background-color': getStyle(1)}"></div>
-            </div>
-                <a
-                        [routerLink]="['/color-convertors', 'hex-rgb-convertor']" 
-                        (click)="deleteConvertors()" 
-                        *ngIf="router.url === '/' || router.url === '/color-convertors'" >Extend convertor<i class="right-arrow"></i></a>
-        </div>`
+    template: require('./hex-rgb.component.html')
 })
 export class HexRgbBox implements ConvertorBase{
     protected labelOutText: string = "RGBA";

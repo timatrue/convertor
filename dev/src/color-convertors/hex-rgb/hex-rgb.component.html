@@ -1,16 +1,15 @@
 <div class="convertor hex">
     <a class="convertor-remove" (click)="deleteConvertor()"></a>
     <h1> HEX to RGB Converter</h1>
-    <div id="hex-container">
-        <div>
-            <label> HEX value:</label>
-            <input maxlength="7" #box (keyup)="onKey(box.value)" placeholder="Example: #722FAF">
-        </div>
-        <span class="inputError" *ngIf="!inputValid">{{ values }}</span>
+    <input-in (inputInEmitter)="onKey($event)"  [results]="results" [meta]="metaInData"></input-in>
+    <input-out [result]="displayValue()" [labelText]="labelOutText"></input-out>
+    <div id="color-container">
+        <input  #picker type="color" (change)="onColorPicker($event.target.value)" [value]="getHEX()"/>
+        <div id="sample-view" [ngStyle]="{'background-color': getStyle(1)}"></div>
     </div>
-    <div id="rgb-container">
-        <label> RGB value:</label>
-        <input [value]="displayValue()" [readonly]="true">
-    </div>
-    <div id="color-example" [ngStyle]="{'background-color': getStyle()}"></div>
+    <a [routerLink]="['/color-convertors', 'hex-rgb-convertor']"
+            (click)="deleteConvertors()"
+            *ngIf="router.url === '/' || router.url === '/color-convertors'" >Extend convertor<i class="right-arrow"></i>
+    </a>
 </div>
+

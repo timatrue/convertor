@@ -6,7 +6,8 @@ import {MessageService} from "../../message-service/message.service";
 import {Router} from "@angular/router";
 import {ConvertorBase} from "../../convertor-interface";
 import './bin-dec.convertor.css';
-import {Utility} from "../../utilility";
+import {DecConvertor, Utility} from "../../utilility";
+import {OUTPUTS} from "../../convertors-service/convertors.list";
 
 @Component({
     selector: 'bin-dec-box',
@@ -18,6 +19,10 @@ import {Utility} from "../../utilility";
             <input-in (inputInEmitter)="onKey($event)" [results]="results" [meta]="metaIn"></input-in>
             <input-out [result]="converted.bin" [labelText]="metaOut.bin"></input-out>
             <input-out [result]="converted.hex" [labelText]="metaOut.hex"></input-out>
+            
+            <select><option *ngFor="let option of outputs" [value]="option.value">{{option.name}}</option></select>
+            <input-out *ngFor="let option of outputs" [result]="converted.hex" [labelText]="metaOut.hex"></input-out>
+            
             <a  *ngIf="router.url === '/' || router.url === '/number-convertors'" [routerLink]="['/number-convertors', 'decimal-binary-convertor']" (click)="deleteConvertors()"  >Extend convertor<i class="right-arrow"></i></a>
         </div>`
 })
@@ -30,6 +35,7 @@ export class DecBinBox implements ConvertorBase, OnInit{
     private error: string = '';
     private inputValid: boolean = false;
     private componentId: string;
+    private outputs = OUTPUTS.decbin;
 
     constructor(public messageService: MessageService, private router: Router){}
 
@@ -45,7 +51,9 @@ export class DecBinBox implements ConvertorBase, OnInit{
                 this.error = "";
                 this.inputValid = true;
                 this.converted.dec = String(input);
-                this.converted.bin = parseInt(input,10).toString(2).toUpperCase();
+                //this.converted.bin = parseInt(input,10).toString(2).toUpperCase();
+                let dec2bin = DecConvertor.getConvertor('bin');
+                this.converted.bin = dec2bin(input);
                 this.converted.hex = parseInt(input,10).toString(16).toUpperCase();
             } else {
                 this.converted.clear();
